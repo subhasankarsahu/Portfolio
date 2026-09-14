@@ -77,6 +77,18 @@ export const DEFAULT_PROJECTS: Project[] = [
     tech_stack: ["React"],
     theme_color: "#1e1e1e",
     is_active: true
+  },
+  {
+    id: 5,
+    title: "CyberGuard",
+    description: "AI-Powered Cyber Threat, Phishing & Digital Impersonation Detection and Response System.",
+    problem: "Traditional rule-based security tools struggle against AI-generated phishing, deepfakes, and social engineering attacks. CyberGuard combines AI/ML detection engines with explainable, human-readable threat analysis and response recommendations.",
+    solution: "AI-powered phishing and scam message detection; deepfake and digital impersonation detection for image and audio; login and account-takeover anomaly detection; unified risk scoring; explainable alerts; recommended response actions; real-time dashboard; mobile notifications and guardian mode; and a lightweight monitoring agent for login and system telemetry.",
+    live_url: "",
+    source_code_url: "https://github.com/teamvisioncraft875-netizen/CyberGuard/",
+    tech_stack: ["Cybersecurity", "Artificial Intelligence", "Machine Learning"],
+    theme_color: "#1c2e3f",
+    is_active: true
   }
 ];
 
