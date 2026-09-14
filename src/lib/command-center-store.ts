@@ -1,4 +1,4 @@
-// SHOURI // COMMAND CENTER — Data Store
+// SSS // COMMAND CENTER — Data Store
 
 export interface CareerProfile {
   headline: string;
@@ -106,7 +106,7 @@ let careerData: CareerProfile = {
   preferredRoles: ["AI Engineer", "Full Stack Developer", "Frontend Engineer"],
   location: "Kolkata, India",
   bio: "Diving deep into Generative AI, Agentic systems, AI/ML, and NLP. I love exploring new tools, experimenting with emerging tech, and building things that make computers feel a little smarter.",
-  resumeUrl: "/Shouri_Chakraborty_Resume.pdf",
+  resumeUrl: "/Subha_Sankar_Sahu_Resume_Improved.docx",
   portraitUrl: "/developer_portrait.jpg"
 };
 
@@ -123,8 +123,8 @@ let activityLogs: ActivityItem[] = [
     id: "act-2",
     timestamp: new Date(Date.now() - 15 * 60 * 1000).toISOString(),
     timeLabel: "15m ago",
-    title: "Project 'Late-Meet' viewed",
-    description: "Agent crawler inspected project details.",
+    title: "Project showcase viewed",
+    description: "Agent crawler inspected the project details.",
     type: "project"
   },
   {
@@ -156,14 +156,14 @@ let aiServices: AIServiceStatus[] = [
 let articlesList: ContentArticle[] = [
   {
     id: "art-1",
-    title: "How I Built Late-Meet: A Local-First Meeting Copilot",
-    slug: "how-i-built-late-meet",
+    title: "Building Practical Full-Stack Projects",
+    slug: "building-practical-full-stack-projects",
     category: "Case Study",
     status: "Published",
     publishedAt: "2026-04-10",
     readTime: "6 min read",
-    summary: "Deep dive into local VAD filtering, real-time WebRTC audio transcription, and running lightweight LLMs directly on-device.",
-    content: "Building Late-Meet required overcoming local audio stream latency..."
+    summary: "Notes on learning backend development, adaptive learning systems, and React through hands-on projects.",
+    content: "Building practical projects creates a feedback loop between learning concepts and applying them..."
   },
   {
     id: "art-2",
@@ -184,7 +184,7 @@ let crmMessages: CRMMessage[] = [
     created_at: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
     name: "Asad Hussain",
     email: "asad@asadhussain.in",
-    message: "Hey Shouri, looked at your portfolio upgrades. The GSAP transitions, GSSoC credentials badge, and live Github activity graph look premium. Keep up the good work!",
+    message: "Your portfolio projects and full-stack work look interesting. Keep up the good work!",
     category: "Collaboration",
     status: "unread",
     admin_notes: "Follow up about open source project collaborations next week."
@@ -211,44 +211,38 @@ let crmMessages: CRMMessage[] = [
 ];
 
 let githubEvents: GitHubActivityEvent[] = [
-  { id: "gh-1", action: "PR #241 merged", repo: "Late-Meet", timeLabel: "18 min ago", type: "pr_merged" },
-  { id: "gh-2", action: "Issue #84 opened: 'Add VAD sensitivity slider'", repo: "Late-Meet", timeLabel: "1 hr ago", type: "issue_opened" },
-  { id: "gh-3", action: "New contributor joined squad", repo: "Aven", timeLabel: "3 hr ago", type: "contributor_joined" },
-  { id: "gh-4", action: "Star received from @dev_alex", repo: "Late-Meet", timeLabel: "4 hr ago", type: "star_received" },
-  { id: "gh-5", action: "Pushed 3 commits to main branch", repo: "Portfolio", timeLabel: "5 hr ago", type: "commit_pushed" },
-  { id: "gh-6", action: "PR #112 reviewed & approved", repo: "Chat-Buddy", timeLabel: "8 hr ago", type: "pr_merged" }
+  { id: "gh-1", action: "Pushed commits to main branch", repo: "Portfolio", timeLabel: "Just now", type: "commit_pushed" },
+  { id: "gh-2", action: "Project showcase synchronized", repo: "LearnVaultX", timeLabel: "1 hr ago", type: "commit_pushed" },
+  { id: "gh-3", action: "Project repository reviewed", repo: "StreamCore", timeLabel: "3 hr ago", type: "issue_opened" },
+  { id: "gh-4", action: "Learning project updated", repo: "React Learning Projects", timeLabel: "5 hr ago", type: "commit_pushed" }
 ];
 
 let repoHealthList: RepoHealthItem[] = [
-  { name: "Late-Meet", stars: 44, forks: 97, openIssues: 128, openPRs: 76, contributors: 76, totalCommits: 1251, status: "Active", lastCommit: "2 days ago" },
-  { name: "Sanatan-Dharma", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 75, status: "Active", lastCommit: "Just now" },
-  { name: "INDEPENDENCE-DAY-2026", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 33, status: "Active", lastCommit: "Aug 15" },
-  { name: "Portfolio", stars: 1, forks: 1, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 18, status: "Active", lastCommit: "Just now" },
-  { name: "Snaply", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 4, status: "Active", lastCommit: "Aug 9" },
-  { name: "ashram_cup-website", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 2, totalCommits: 6, status: "Active", lastCommit: "Aug 12" },
-  { name: "Aven", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 12, status: "Healthy", lastCommit: "3 months ago" },
-  { name: "chat-buddy", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 2, totalCommits: 45, status: "Healthy", lastCommit: "1 month ago" }
+  { name: "LearnVaultX", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, status: "Active", lastCommit: "Not synchronized" },
+  { name: "JB Ride", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, status: "Active", lastCommit: "Not synchronized" },
+  { name: "StreamCore", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, status: "Active", lastCommit: "Not synchronized" },
+  { name: "React Learning Projects", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, status: "Active", lastCommit: "Not synchronized" }
 ];
 
 let maintainerMetrics: MaintainerMetrics = {
-  totalProjects: 19,
-  activeProjects: 6,
-  totalContributors: 76,
-  mergedPRs: 200,
-  openIssues: 128,
-  openPRs: 76,
-  totalCommits: 1816,
-  totalRepositoriesContributed: 44,
+  totalProjects: 4,
+  activeProjects: 4,
+  totalContributors: 0,
+  mergedPRs: 0,
+  openIssues: 0,
+  openPRs: 0,
+  totalCommits: 0,
+  totalRepositoriesContributed: 4,
   lastActivity: "Just now",
-  prResponseQuality: "Excellent (< 2h avg)",
-  issueActivity: "High (128 open issues, 76 open PRs)",
-  contributorGrowthTrend: "+76 contributors squad",
-  communityScore: "96%",
+  prResponseQuality: "No synchronized data",
+  issueActivity: "No synchronized data",
+  contributorGrowthTrend: "No synchronized data",
+  communityScore: "N/A",
   distribution: {
-    commits: 75,
-    codeReview: 17,
-    issues: 5,
-    pullRequests: 3
+    commits: 0,
+    codeReview: 0,
+    issues: 0,
+    pullRequests: 0
   }
 };
 

@@ -5,8 +5,8 @@ import { ArrowLeft, Mail, MapPin, MessageSquare, Clock, Globe } from "lucide-rea
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Shouri Chakraborty | AI Developer & Software Engineer",
-  description: "Get in touch with Shouri Chakraborty. Send direct messages for AI development, open source collaboration, internships, or freelance inquiries.",
+  title: "Contact Subha Sankar Sahu | Full-Stack Developer",
+  description: "Get in touch with Subha Sankar Sahu for software development internships, collaboration, or project inquiries.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
         </Link>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#E1E0CC] mb-6">
-          Contact <span className="font-serif italic font-normal text-white">Shouri Chakraborty</span>
+          Contact <span className="font-serif italic font-normal text-white">Subha Sankar Sahu</span>
         </h1>
 
         <p className="text-lg md:text-xl text-primary/80 leading-relaxed font-light mb-12 max-w-3xl">
@@ -41,8 +41,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xs uppercase tracking-wider text-white/50 font-mono">Direct Email</h3>
-                  <a href="mailto:chakrabortyshouri@gmail.com" className="text-base text-white font-medium hover:text-primary transition-colors">
-                    chakrabortyshouri@gmail.com
+                  <a href="mailto:subhasankarsahu5@gmail.com" className="text-base text-white font-medium hover:text-primary transition-colors">
+                    subhasankarsahu5@gmail.com
                   </a>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xs uppercase tracking-wider text-white/50 font-mono">Location</h3>
-                  <p className="text-base text-white font-medium">Kolkata, West Bengal, India</p>
+                  <p className="text-base text-white font-medium">Rourkela, Odisha, India</p>
                 </div>
               </div>
 
@@ -74,13 +74,7 @@ export default function ContactPage() {
               </h2>
               <ul className="flex flex-col gap-3 text-sm text-gray-300 font-mono">
                 <li>
-                  GitHub: <a href="https://github.com/shouri123" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/shouri123</a>
-                </li>
-                <li>
-                  LinkedIn: <a href="https://www.linkedin.com/in/shouri-chakraborty-224b5330b/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">linkedin.com/in/shouri-chakraborty</a>
-                </li>
-                <li>
-                  Instagram: <a href="https://instagram.com/shourichakraborty" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">instagram.com/shourichakraborty</a>
+                  GitHub: <a href="https://github.com/subhasankarsahu" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/subhasankarsahu</a>
                 </li>
               </ul>
             </div>
@@ -94,7 +88,7 @@ export default function ContactPage() {
                 Whether you are a recruiter evaluating candidate profiles, an open-source contributor, or an organization looking to build custom AI agents, submit your inquiry below.
               </p>
               <div className="bg-black/50 border border-white/10 rounded-xl p-4 text-xs text-primary/80 font-mono leading-relaxed mb-6">
-                All messages are recorded directly into the Shouri Command Center CRM for prompt response.
+                All messages are recorded directly into the Command Center CRM for prompt response.
               </div>
             </div>
 

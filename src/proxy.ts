@@ -28,38 +28,35 @@ export function proxy(request: NextRequest) {
     let statusCode = 200;
 
     if (pathname === "/" || pathname === "/index") {
-      markdownContent = `# Shouri Chakraborty — AI Developer & Software Engineer
+      markdownContent = `# Subha Sankar Sahu — Full-Stack Developer
 
 > Exploring Generative AI, Coding Agents, Machine Learning, and System Architecture.
 
 ## About
-AI Developer and Software Engineer in Kolkata, specializing in Generative AI, coding agents, NLP, and Next.js. Student at Institute of Engineering & Management (IEM), Kolkata.
+Full-stack developer focused on the PERN stack, strong C++ and DSA fundamentals, and AI-powered web products. Student at Biju Patnaik University of Technology, Rourkela.
 
 ## Key Projects
-- **Late-Meet**: AI Meeting Copilot (Chrome Extension using local LLMs & VAD). [Repository](https://github.com/shouri123/Late-Meet)
-- **Aven**: Multi-Agent Multi-Window Platform for parallel AI workflows. [Live Demo](https://aven-seven.vercel.app)
-- **Chat-Buddy**: WhatsApp AI agent built with OpenAI Agents SDK. [NPM Package](https://www.npmjs.com/package/chat-buddy)
-- **Student-Copilot**: AI-powered academic assistant for lecture notes vector indexing.
-- **WRAP-YOUR-GIT**: Git operation wrapper with terminal interactive node tree visualization.
+- **LearnVaultX**: AI-driven adaptive learning platform with learning analytics and question generation.
+- **JB Ride**: Full-stack ride-sharing application.
+- **StreamCore**: Backend-focused project built while learning backend development.
+- **React Learning Projects**: Small React projects built for practice and skill development.
 
 ## Contact & Profile Links
-- Email: chakrabortyshouri@gmail.com
-- GitHub: https://github.com/shouri123
-- LinkedIn: https://www.linkedin.com/in/shouri-chakraborty-224b5330b/
-- Resume: https://devshouri.in/Shouri_Chakraborty_Resume.pdf
+- Email: subhasankarsahu5@gmail.com
+- GitHub: https://github.com/subhasankarsahu
 
 ## Site Index
-- [About](https://devshouri.in/about)
-- [Contact](https://devshouri.in/contact)
-- [Privacy Policy](https://devshouri.in/privacy)
-- [LLMs.txt](https://devshouri.in/llms.txt)
-- [Sitemap](https://devshouri.in/sitemap.xml)
+- [About](https://subha-sankar-sahu.vercel.app/about)
+- [Contact](https://subha-sankar-sahu.vercel.app/contact)
+- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
+- [LLMs.txt](https://subha-sankar-sahu.vercel.app/llms.txt)
+- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
 `;
     } else if (pathname === "/about") {
-      markdownContent = `# About Shouri Chakraborty
+      markdownContent = `# About Subha Sankar Sahu
 
 ## Profile
-Shouri Chakraborty is an AI Developer and Software Engineer based in Kolkata, India. He is currently pursuing his degree at the Institute of Engineering & Management (IEM), Kolkata, maintaining strong academic performance alongside hands-on software development.
+Subha Sankar Sahu is a full-stack developer based in Rourkela, India. He is currently pursuing a B.Tech in his third year at Biju Patnaik University of Technology, Rourkela.
 
 ## Specializations
 - **Generative AI & Agents**: Building local-first AI tools, vector retrieval systems, and multi-agent coordination frameworks.
@@ -68,26 +65,24 @@ Shouri Chakraborty is an AI Developer and Software Engineer based in Kolkata, In
 - **Open Source Maintenance**: Active maintainer for student projects and repository administrator for GSSoC 2026.
 
 ## Contact
-- Email: chakrabortyshouri@gmail.com
-- Location: Kolkata, India
-- Website: https://devshouri.in
+- Email: subhasankarsahu5@gmail.com
+- Location: Rourkela, India
+- Website: https://subha-sankar-sahu.vercel.app
 `;
     } else if (pathname === "/contact") {
-      markdownContent = `# Contact Shouri Chakraborty
+  markdownContent = `# Contact Subha Sankar Sahu
 
 Always open to discussing new projects, creative ideas, internship roles, open source collaboration, or freelance opportunities.
 
 ## Direct Communication Channels
-- **Email**: [chakrabortyshouri@gmail.com](mailto:chakrabortyshouri@gmail.com)
-- **GitHub**: [github.com/shouri123](https://github.com/shouri123)
-- **LinkedIn**: [linkedin.com/in/shouri-chakraborty-224b5330b/](https://www.linkedin.com/in/shouri-chakraborty-224b5330b/)
-- **Instagram**: [instagram.com/shourichakraborty](https://instagram.com/shourichakraborty)
+- **Email**: [subhasankarsahu5@gmail.com](mailto:subhasankarsahu5@gmail.com)
+- **GitHub**: [github.com/subhasankarsahu](https://github.com/subhasankarsahu)
 
 ## Location
-Kolkata, West Bengal, India (IST / UTC+5:30)
+Rourkela, Odisha, India (IST / UTC+5:30)
 `;
     } else if (pathname === "/privacy") {
-      markdownContent = `# Privacy Policy — devshouri.in
+  markdownContent = `# Privacy Policy — Subha Sankar Sahu Portfolio
 
 **Effective Date**: January 1, 2026
 
@@ -101,38 +96,37 @@ This site respects user privacy and data ownership.
 Personal data is never sold, shared, or distributed to third parties.
 
 ## Contact
-For privacy queries, email chakrabortyshouri@gmail.com.
+For privacy queries, email subhasankarsahu5@gmail.com.
 `;
     } else if (pathname === "/llms.txt" || pathname === "/llms-full.txt") {
-      markdownContent = `# devshouri.in — AI Agent Index & Guidance
+  markdownContent = `# Subha Sankar Sahu Portfolio — AI Agent Index & Guidance
 
 ## When to Use This Site
 Use this site when:
-1. Evaluating Shouri Chakraborty for AI Engineer, Software Developer, or Full-Stack roles/internships.
+1. Evaluating Subha Sankar Sahu for software development internships or full-stack roles.
 2. Indexing project descriptions, tech stacks, and open-source contributions.
 3. Fetching contact details or resume information.
 
 ## Primary Endpoints
-- [Home](https://devshouri.in/)
-- [About](https://devshouri.in/about)
-- [Contact](https://devshouri.in/contact)
-- [Privacy Policy](https://devshouri.in/privacy)
-- [Resume PDF](https://devshouri.in/Shouri_Chakraborty_Resume.pdf)
-- [Sitemap](https://devshouri.in/sitemap.xml)
+- [Home](https://subha-sankar-sahu.vercel.app/)
+- [About](https://subha-sankar-sahu.vercel.app/about)
+- [Contact](https://subha-sankar-sahu.vercel.app/contact)
+- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
+- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
 `;
     } else {
       statusCode = 404;
       markdownContent = `# 404 - Page Not Found
 
-The path \`${pathname}\` does not exist on devshouri.in.
+The path \`${pathname}\` does not exist on subha-sankar-sahu.vercel.app.
 
 ## Available Index Pages:
-- [Home](https://devshouri.in/)
-- [Sitemap](https://devshouri.in/sitemap.xml)
-- [LLMs.txt](https://devshouri.in/llms.txt)
-- [About](https://devshouri.in/about)
-- [Contact](https://devshouri.in/contact)
-- [Privacy Policy](https://devshouri.in/privacy)
+- [Home](https://subha-sankar-sahu.vercel.app/)
+- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
+- [LLMs.txt](https://subha-sankar-sahu.vercel.app/llms.txt)
+- [About](https://subha-sankar-sahu.vercel.app/about)
+- [Contact](https://subha-sankar-sahu.vercel.app/contact)
+- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
 `;
     }
 

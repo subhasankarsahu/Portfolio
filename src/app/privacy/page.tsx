@@ -5,8 +5,8 @@ import { ArrowLeft, Shield, Lock, Eye, FileText } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Shouri Chakraborty Portfolio",
-  description: "Privacy policy for devshouri.in. Learn how user privacy, data handling, and analytics are managed across this portfolio website.",
+  title: "Privacy Policy | Subha Sankar Sahu Portfolio",
+  description: "Privacy policy for Subha Sankar Sahu's portfolio website.",
 };
 
 export default function PrivacyPage() {
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
               <Shield className="text-primary" size={18} /> 1. Commitment to Privacy
             </h2>
             <p>
-              At <strong>devshouri.in</strong>, respecting visitor privacy is a fundamental principle. This Privacy Policy outlines what information is collected, how it is handled, and your rights regarding any data submitted through this website.
+              Respecting visitor privacy is a fundamental principle. This Privacy Policy outlines what information is collected, how it is handled, and your rights regarding any data submitted through this website.
             </p>
           </section>
 
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
           <section className="border-t border-white/10 pt-6">
             <h2 className="text-base font-bold text-white mb-2">5. Contact Information</h2>
             <p className="text-xs text-gray-400">
-              For any questions or data removal requests regarding this Privacy Policy, email: <a href="mailto:chakrabortyshouri@gmail.com" className="text-primary hover:underline">chakrabortyshouri@gmail.com</a>.
+              For any questions or data removal requests regarding this Privacy Policy, email: <a href="mailto:subhasankarsahu5@gmail.com" className="text-primary hover:underline">subhasankarsahu5@gmail.com</a>.
             </p>
           </section>
         </div>

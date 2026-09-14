@@ -1,4 +1,4 @@
-# Shouri Chakraborty | AI Developer & Software Engineer Portfolio
+# Subha Sankar Sahu | Full-Stack Developer Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.4-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -27,7 +27,7 @@ A premium, highly interactive, and visually stunning developer portfolio and dig
 * **Digital OS Command Center Dashboard (`/admin`)**:
   * Cookie-based admin authentication session management.
   * **Portfolio CMS**: Create, edit, and toggle active portfolio projects.
-  * **GitHub Repos Browser**: One-click import of public repositories from `@shouri123` into the portfolio showcase.
+  * **GitHub Repos Browser**: One-click import of public repositories from `@subhasankarsahu` into the portfolio showcase.
   * **Inbound Opportunity CRM**: Real-time reader and status manager for incoming contact submissions.
   * **Developer CLI Console**: Interactive BASH-style terminal to query system metrics, trigger syncs, and audit telemetry.
 * **Automated Supabase Health & Telemetry Pipeline**:
@@ -57,7 +57,7 @@ A premium, highly interactive, and visually stunning developer portfolio and dig
 │   └── workflows/
 │       └── health-check.yml
 ├── public/                  # Static assets (PDFs, images, videos)
-│   ├── Shouri_Chakraborty_Resume.pdf
+│   ├── Subha_Sankar_Sahu_Resume_Improved.docx
 │   ├── developer_portrait.jpg
 │   └── videos/              # Seamless background loop videos
 ├── src/
@@ -99,7 +99,7 @@ Ensure you have **Node.js (v18+)** and **npm** installed.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/shouri123/Portfolio.git
+git clone https://github.com/subhasankarsahu/Portfolio.git
 cd Portfolio
 ```
 
@@ -169,8 +169,7 @@ The easiest way to deploy this portfolio is using Vercel:
 
 ## 🤝 Contact & Connections
 
-* **Developer**: Shouri Chakraborty
-* **GitHub**: [@shouri123](https://github.com/shouri123)
-* **LinkedIn**: [shouri-chakraborty](https://linkedin.com/in/shouri-chakraborty)
-* **Instagram**: [@devshouri](https://instagram.com/devshouri)
-* **Website**: [devshouri.in](https://devshouri.in)
+* **Developer**: Subha Sankar Sahu
+* **GitHub**: [@subhasankarsahu](https://github.com/subhasankarsahu)
+* **Email**: [subhasankarsahu5@gmail.com](mailto:subhasankarsahu5@gmail.com)
+* **Website**: [subha-sankar-sahu.vercel.app](https://subha-sankar-sahu.vercel.app)

@@ -5,8 +5,8 @@ import { ArrowLeft, Award, Code2, GraduationCap, Sparkles, Terminal } from "luci
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Shouri Chakraborty | AI Developer & Software Engineer",
-  description: "Learn about Shouri Chakraborty, an AI developer and software engineer in Kolkata specializing in Generative AI, coding agents, NLP, and full-stack web applications.",
+  title: "About Subha Sankar Sahu | Full-Stack Developer",
+  description: "Learn about Subha Sankar Sahu, a full-stack developer focused on the PERN stack, C++, DSA, and AI-powered web products.",
 };
 
 export default function AboutPage() {
@@ -20,11 +20,11 @@ export default function AboutPage() {
         </Link>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#E1E0CC] mb-6">
-          About <span className="font-serif italic font-normal text-white">Shouri Chakraborty</span>
+          About <span className="font-serif italic font-normal text-white">Subha Sankar Sahu</span>
         </h1>
 
         <p className="text-lg md:text-xl text-primary/80 leading-relaxed font-light mb-12 max-w-3xl">
-          AI Developer and Software Engineer based in Kolkata, India. Specialized in Generative AI, autonomous coding agents, natural language processing algorithms, and high-performance Next.js architectures.
+          Full-stack developer based in Rourkela, India, focused on the PERN stack, C++, DSA fundamentals, and AI-powered web products.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 border-t border-b border-white/10 py-12">
@@ -35,7 +35,7 @@ export default function AboutPage() {
               <h2 className="text-xl font-semibold uppercase tracking-wider text-white">Education & Background</h2>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Currently pursuing a Bachelor of Computer Applications (BCA) at the <strong>Institute of Engineering & Management (IEM), Kolkata</strong>. Combining rigorous computer science theory with intensive software engineering projects, maintaining strong academic performance alongside active open-source contribution.
+              Currently pursuing a <strong>B.Tech, 3rd Year</strong> at <strong>Biju Patnaik University of Technology, Rourkela</strong>. Combining rigorous computer science theory with hands-on software engineering projects and open-source contribution.
             </p>
           </div>
 
@@ -84,10 +84,10 @@ export default function AboutPage() {
             <Award size={22} className="text-primary" /> Open Source & Achievements
           </h2>
           <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            Repository Administrator for GirlScript Summer of Code (GSSoC) 2026, overseeing hundreds of pull requests and guiding contributors. Creator of popular open-source projects including Late-Meet (AI Meeting Copilot), Aven (MAMWA Agent Platform), Chat-Buddy (WhatsApp AI Agent), and Student-Copilot.
+            Building LearnVaultX, JB Ride, StreamCore, and React learning projects while developing practical full-stack and AI-integrated web engineering skills.
           </p>
           <div className="flex flex-wrap gap-4 mt-6">
-            <a href="https://github.com/shouri123" target="_blank" rel="noopener noreferrer" className="bg-primary text-black font-semibold text-xs rounded-full px-5 py-2.5 hover:bg-white transition-colors">
+            <a href="https://github.com/subhasankarsahu" target="_blank" rel="noopener noreferrer" className="bg-primary text-black font-semibold text-xs rounded-full px-5 py-2.5 hover:bg-white transition-colors">
               Explore GitHub Profile
             </a>
             <a href="/contact" className="border border-white/20 text-white font-semibold text-xs rounded-full px-5 py-2.5 hover:border-primary transition-colors">

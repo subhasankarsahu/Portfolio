@@ -54,7 +54,7 @@ runTest("Trust Anchor Page: /about", () => {
   assert(fs.existsSync(aboutPath), "/about page must exist");
   const content = fs.readFileSync(aboutPath, 'utf8');
   assert(content.length > 500, "/about page content must be over 500 characters");
-  assert(content.includes("Shouri Chakraborty"), "/about page must contain full developer name");
+  assert(content.includes("Subha Sankar Sahu"), "/about page must contain full developer name");
 });
 
 runTest("Trust Anchor Page: /contact", () => {
@@ -62,7 +62,7 @@ runTest("Trust Anchor Page: /contact", () => {
   assert(fs.existsSync(contactPath), "/contact page must exist");
   const content = fs.readFileSync(contactPath, 'utf8');
   assert(content.length > 500, "/contact page content must be over 500 characters");
-  assert(content.includes("chakrabortyshouri@gmail.com"), "/contact page must state email contact");
+  assert(content.includes("subhasankarsahu5@gmail.com"), "/contact page must state email contact");
 });
 
 runTest("Trust Anchor Page: /privacy", () => {
@@ -97,9 +97,9 @@ runTest("JSON-LD Person, WebSite & ProfilePage Schemas", () => {
   const layoutPath = path.join(__dirname, '../src/app/layout.tsx');
   const content = fs.readFileSync(layoutPath, 'utf8');
   assert(content.includes("@type\": \"Person\""), "JSON-LD must include Person schema");
-  assert(content.includes("description\": \"Shouri Chakraborty is an AI Developer"), "Person JSON-LD must include detailed description field");
+  assert(content.includes("description\": \"Full-stack developer focused on PERN applications"), "Person JSON-LD must include detailed description field");
   assert(content.includes("@type\": \"ProfilePage\""), "JSON-LD must include ProfilePage schema");
-  assert(content.includes("addressLocality\": \"Kolkata\""), "Person JSON-LD must include address details");
+  assert(content.includes("addressLocality\": \"Rourkela\""), "Person JSON-LD must include address details");
 });
 
 // 7. Check Command Center Dashboard & Admin APIs

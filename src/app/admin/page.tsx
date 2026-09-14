@@ -22,15 +22,15 @@ export default function CommandCenterDashboard() {
   // Terminal state
   const [terminalInput, setTerminalInput] = useState("");
   const [terminalLogs, setTerminalLogs] = useState<string[]>([
-    "shouri@command-center:~$ systemctl status digital-presence",
-    "● digital-presence.service - Shouri Chakraborty Digital OS",
+    "sss@command-center:~$ systemctl status digital-presence",
+    "● digital-presence.service - Subha Sankar Sahu Digital OS",
     "   Loaded: loaded (/etc/systemd/system/digital-presence.service)",
     "   Active: active (running) since Sun 2026-08-23 09:30:00 IST",
     "   Main PID: 1420 (next-server)",
     "   Tasks: 18 (limit: 4915)",
     "   Memory: 84.2M",
     "   CPU: 12ms",
-    "shouri@command-center:~$ type 'help' for available commands..."
+    "sss@command-center:~$ type 'help' for available commands..."
   ]);
 
   // Dashboard Data states
@@ -44,7 +44,7 @@ export default function CommandCenterDashboard() {
     preferredRoles: ["AI Engineer", "Full Stack Developer", "Frontend Engineer"],
     location: "Kolkata, India",
     bio: "Diving deep into Generative AI, Agentic systems, AI/ML, and NLP. I love exploring new tools, experimenting with emerging tech, and building things that make computers feel a little smarter.",
-    resumeUrl: "/Shouri_Chakraborty_Resume.pdf",
+    resumeUrl: "/Subha_Sankar_Sahu_Resume_Improved.docx",
     portraitUrl: "/developer_portrait.jpg"
   });
   const [aiServices, setAiServices] = useState<any[]>([]);
@@ -159,7 +159,7 @@ export default function CommandCenterDashboard() {
 
   const handleSyncGithub = async () => {
     setSyncingGithub(true);
-    setSyncToast("Syncing with live GitHub API for @shouri123...");
+    setSyncToast("Syncing with live GitHub API for @subhasankarsahu...");
     try {
       const syncRes = await fetch("/api/admin/sync-github", { method: "POST" });
       if (syncRes.ok) {
@@ -173,7 +173,7 @@ export default function CommandCenterDashboard() {
         setSyncToast(`✓ GitHub Synced: ${stars}⭐ • ${forks}🍴 • ${repos} Repos • ${contribs?.toLocaleString()} Commits`);
         setTerminalLogs(prev => [
           ...prev,
-          `shouri@command-center:~$ github-sync --live`,
+          `sss@command-center:~$ github-sync --live`,
           `[OK] GitHub telemetry synchronized successfully at ${new Date().toLocaleTimeString()}.`,
           `[TELEMETRY] Repos: ${repos} | Stars: ${stars} | Forks: ${forks} | Total Contributions: ${contribs?.toLocaleString()}`
         ]);
@@ -244,7 +244,7 @@ export default function CommandCenterDashboard() {
     try {
       const newProjectPayload = {
         title: repo.name,
-        description: repo.description || `Open-source GitHub repository ${repo.name} by Shouri Chakraborty.`,
+        description: repo.description || `Open-source GitHub repository ${repo.name} by Subha Sankar Sahu.`,
         live_url: repo.homepage && repo.homepage.startsWith("http") ? repo.homepage : repo.html_url,
         source_code_url: repo.html_url,
         tech_stack: repo.language ? [repo.language, ...(repo.topics || [])] : ["TypeScript"],
@@ -403,7 +403,7 @@ export default function CommandCenterDashboard() {
     if (!terminalInput.trim()) return;
 
     const cmd = terminalInput.trim().toLowerCase();
-    const newLogs = [...terminalLogs, `shouri@command-center:~$ ${cmd}`];
+    const newLogs = [...terminalLogs, `sss@command-center:~$ ${cmd}`];
 
     if (cmd === "help") {
       newLogs.push("Available CLI Commands:");
@@ -418,7 +418,7 @@ export default function CommandCenterDashboard() {
     } else if (cmd === "status") {
       newLogs.push(`System Status: ALL SYSTEMS OPERATIONAL (API: ${systemStats.health?.responseMs || 142}ms | Supabase DB: ${systemStats.health?.databaseMs || 24}ms | GitHub: Synced)`);
     } else if (cmd === "github") {
-      newLogs.push(`[GITHUB PROFILE] Account: @shouri123 (https://github.com/shouri123)`);
+      newLogs.push(`[GITHUB PROFILE] Account: @subhasankarsahu (https://github.com/subhasankarsahu)`);
       newLogs.push(`  • Public Repositories: ${systemStats.metrics?.publicRepos || 19}`);
       newLogs.push(`  • Total Stargazers: ${systemStats.metrics?.stars || 44} ⭐`);
       newLogs.push(`  • Total Forks: ${systemStats.metrics?.forks || 97} 🍴`);
@@ -426,7 +426,7 @@ export default function CommandCenterDashboard() {
       newLogs.push(`  • Longest Streak: ${systemStats.metrics?.longestStreak || 23} days`);
       newLogs.push(`  • Active Repos: ${systemStats.maintainerMetrics?.activeProjects || 3}`);
     } else if (cmd === "health" || cmd === "telemetry") {
-      newLogs.push(`[DATABASE TELEMETRY] Node: Supabase PostgreSQL (devshouri.in)`);
+      newLogs.push(`[DATABASE TELEMETRY] Node: Supabase PostgreSQL (subha-sankar-sahu.vercel.app)`);
       newLogs.push(`  • Status: ${systemStats.health?.database || "Operational"}`);
       newLogs.push(`  • Latency: ${systemStats.health?.databaseMs || 24}ms round-trip`);
       newLogs.push(`  • Last Health Check: ${systemStats.health?.lastCheck ? new Date(systemStats.health.lastCheck).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "08:30 IST"} (Automated Cron)`);
@@ -443,7 +443,7 @@ export default function CommandCenterDashboard() {
       const unreadCount = messages.filter(m => m.status === "unread").length;
       newLogs.push(`Unread Messages: ${unreadCount} pending messages.`);
     } else if (cmd === "clear") {
-      setTerminalLogs(["shouri@command-center:~$ screen cleared"]);
+      setTerminalLogs(["sss@command-center:~$ screen cleared"]);
       setTerminalInput("");
       return;
     } else {
@@ -478,7 +478,7 @@ export default function CommandCenterDashboard() {
           {/* Header Badge */}
           <div className="mb-8">
             <div className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#DEDBC8] font-bold">
-              SHOURI // DIGITAL OS
+              SSS // DIGITAL OS
             </div>
             <h1 className="text-xl font-black text-white tracking-tight mt-1 flex items-center gap-2">
               COMMAND CENTER
@@ -624,7 +624,7 @@ export default function CommandCenterDashboard() {
               <ExternalLink className="w-3.5 h-3.5" />
               Public Portfolio
             </span>
-            <span className="text-[10px] font-mono text-gray-500">devshouri.in</span>
+            <span className="text-[10px] font-mono text-gray-500">subha-sankar-sahu.vercel.app</span>
           </a>
 
           <button
@@ -648,7 +648,7 @@ export default function CommandCenterDashboard() {
             {/* Header Greeting */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/10 pb-6">
               <div>
-                <h2 className="text-2xl font-black text-white tracking-tight">Good morning, Shouri 👋</h2>
+                <h2 className="text-2xl font-black text-white tracking-tight">Good morning, Subha 👋</h2>
                 <div className="flex flex-wrap items-center gap-2 mt-1">
                   <p className="text-xs text-gray-400 font-mono">Your digital presence is healthy. All core services & storage nodes active.</p>
                   <span className="text-[9px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full flex items-center gap-1.5 shrink-0">
@@ -703,7 +703,7 @@ export default function CommandCenterDashboard() {
                   <GitBranch className="w-4 h-4 text-purple-400" />
                 </div>
                 <div className="text-2xl font-black text-white font-mono">{systemStats.metrics?.publicRepos || 19}</div>
-                <div className="text-[10px] text-purple-400 font-mono mt-1">On @shouri123 account</div>
+                <div className="text-[10px] text-purple-400 font-mono mt-1">On @subhasankarsahu account</div>
               </div>
 
               <div className="bg-[#0f0f0f] border border-white/10 p-5 rounded-2xl">
@@ -905,7 +905,7 @@ export default function CommandCenterDashboard() {
                         value={editingProject.title || ""}
                         onChange={e => setEditingProject({ ...editingProject, title: e.target.value })}
                         className="w-full bg-black border border-white/10 rounded-xl px-3.5 py-2.5 text-white focus:outline-none focus:border-[#DEDBC8]"
-                        placeholder="e.g. Late-Meet"
+                        placeholder="e.g. LearnVaultX"
                       />
                     </div>
 
@@ -1070,7 +1070,7 @@ export default function CommandCenterDashboard() {
                 <div className="text-[11px] font-mono text-gray-400 uppercase tracking-wider">Total Stars</div>
                 <div className="text-3xl font-black text-white font-mono mt-1">{systemStats.metrics?.stars || 45}</div>
                 <div className="text-[10px] text-amber-400 font-mono mt-1 flex items-center gap-1">
-                  <span>⭐ 44 Late-Meet • 1 Portfolio</span>
+                  <span>⭐ Current project statistics</span>
                 </div>
               </div>
 
@@ -1078,7 +1078,7 @@ export default function CommandCenterDashboard() {
                 <div className="text-[11px] font-mono text-gray-400 uppercase tracking-wider">Total Forks</div>
                 <div className="text-3xl font-black text-white font-mono mt-1">{systemStats.metrics?.forks || 98}</div>
                 <div className="text-[10px] text-blue-400 font-mono mt-1 flex items-center gap-1">
-                  <span>🍴 97 Late-Meet • 1 Portfolio</span>
+                  <span>🍴 Current project statistics</span>
                 </div>
               </div>
 
@@ -1086,7 +1086,7 @@ export default function CommandCenterDashboard() {
                 <div className="text-[11px] font-mono text-gray-400 uppercase tracking-wider">Contributors</div>
                 <div className="text-3xl font-black text-white font-mono mt-1">{systemStats.maintainerMetrics?.totalContributors || 76}+</div>
                 <div className="text-[10px] text-purple-400 font-mono mt-1">
-                  <span>👥 76 on Late-Meet squad</span>
+                  <span>👥 Current contributor statistics</span>
                 </div>
               </div>
 
@@ -1110,7 +1110,7 @@ export default function CommandCenterDashboard() {
                     </span>
                   </h3>
                   <p className="text-xs text-gray-400 font-mono mt-0.5">
-                    Contributed to <span className="text-white font-medium">shouri123/Late-Meet</span>, <span className="text-white font-medium">shouri123/Sanatan-Dharma</span>, <span className="text-white font-medium">shouri123/Portfolio</span> and 41 other repositories
+                    GitHub activity across Subha Sankar Sahu&apos;s public repositories is shown here when synchronized.
                   </p>
                 </div>
                 <div className="flex items-center gap-4 text-xs font-mono text-gray-400">
@@ -1186,13 +1186,10 @@ export default function CommandCenterDashboard() {
                   
                   <div className="space-y-3 font-mono text-xs max-h-[300px] overflow-y-auto pr-1">
                     {(systemStats.repoHealth && systemStats.repoHealth.length > 0 ? systemStats.repoHealth : [
-                      { name: "Late-Meet", status: "Active", stars: 44, forks: 97, openIssues: 128, openPRs: 76, contributors: 76, totalCommits: 1251, lastCommit: "2 days ago" },
-                      { name: "Sanatan-Dharma", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 75, lastCommit: "Just now" },
-                      { name: "INDEPENDENCE-DAY-2026", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 33, lastCommit: "Aug 15" },
-                      { name: "Portfolio", status: "Active", stars: 1, forks: 1, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 18, lastCommit: "Just now" },
-                      { name: "Snaply", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 4, lastCommit: "Aug 9" },
-                      { name: "ashram_cup-website", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 2, totalCommits: 6, lastCommit: "Aug 12" },
-                      { name: "chat-buddy", status: "Healthy", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 2, totalCommits: 45, lastCommit: "1 month ago" }
+                      { name: "LearnVaultX", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, lastCommit: "Not synchronized" },
+                      { name: "JB Ride", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, lastCommit: "Not synchronized" },
+                      { name: "StreamCore", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, lastCommit: "Not synchronized" },
+                      { name: "React Learning Projects", status: "Active", stars: 0, forks: 0, openIssues: 0, openPRs: 0, contributors: 1, totalCommits: 0, lastCommit: "Not synchronized" }
                     ]).map((repo: any) => (
                       <div key={repo.name} className="flex items-center justify-between p-2.5 rounded-xl bg-white/2 border border-white/5">
                         <div className="flex items-center gap-2 min-w-0">
@@ -1234,11 +1231,10 @@ export default function CommandCenterDashboard() {
                 </div>
                 <div className="space-y-3 font-mono text-xs max-h-[320px] overflow-y-auto pr-1">
                   {(systemStats.githubEvents && systemStats.githubEvents.length > 0 ? systemStats.githubEvents : [
-                    { id: "gh-1", action: "Pushed 75 commits", repo: "Sanatan-Dharma", timeLabel: "Just now" },
-                    { id: "gh-2", action: "Pushed 33 commits", repo: "INDEPENDENCE-DAY-2026", timeLabel: "Aug 15" },
-                    { id: "gh-3", action: "Created PR: 'Link and Registration button added'", repo: "snackoverflowasad/Metasphere-2026", timeLabel: "Aug 10" },
-                    { id: "gh-4", action: "PR merged: 'Add background music dai_dai.mp3'", repo: "subhradeep333/ashram_cup-website", timeLabel: "Aug 12" },
-                    { id: "gh-5", action: "Maintained 1,251 commits & 76 contributors squad", repo: "Late-Meet", timeLabel: "2 days ago" }
+                    { id: "gh-1", action: "Project data synchronized", repo: "LearnVaultX", timeLabel: "Just now" },
+                    { id: "gh-2", action: "Project data synchronized", repo: "JB Ride", timeLabel: "1 hr ago" },
+                    { id: "gh-3", action: "Project data synchronized", repo: "StreamCore", timeLabel: "3 hr ago" },
+                    { id: "gh-4", action: "Project data synchronized", repo: "React Learning Projects", timeLabel: "5 hr ago" }
                   ]).map((event: any) => (
                     <div key={event.id} className="flex items-center justify-between p-3 rounded-xl bg-white/2 border border-white/5">
                       <div className="flex items-center gap-3 min-w-0">
@@ -1289,7 +1285,7 @@ export default function CommandCenterDashboard() {
                     <div className="flex justify-between"><span>Open Issues:</span> <span className="text-white">128 open</span></div>
                     <div className="flex justify-between"><span>Open PRs:</span> <span className="text-white">76 pending review</span></div>
                     <div className="flex justify-between"><span>PR response:</span> <span className="text-white">{systemStats.maintainerMetrics?.prResponseQuality || "Excellent (< 2h avg)"}</span></div>
-                    <div className="flex justify-between"><span>Late-Meet squad:</span> <span className="text-emerald-400">76 contributors</span></div>
+                    <div className="flex justify-between"><span>Project contributors:</span> <span className="text-emerald-400">No synchronized data</span></div>
                   </div>
                 </div>
               </div>
@@ -1337,26 +1333,10 @@ export default function CommandCenterDashboard() {
               <div className="space-y-3 font-mono text-xs">
                 <div className="flex items-center justify-between p-3 rounded-xl bg-white/2 border border-white/5">
                   <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <span className="text-white font-bold">Late-Meet VAD Transcriber</span>
+                    <span className="w-2 h-2 rounded-full bg-gray-500" />
+                    <span className="text-white font-bold">No active agents</span>
                   </div>
-                  <span className="text-gray-400 text-[10px]">Active • 18ms WebRTC buffer</span>
-                </div>
-
-                <div className="flex items-center justify-between p-3 rounded-xl bg-white/2 border border-white/5">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <span className="text-white font-bold">Chat-Buddy WhatsApp Bot</span>
-                  </div>
-                  <span className="text-gray-400 text-[10px]">Active • Node.js Baileys engine</span>
-                </div>
-
-                <div className="flex items-center justify-between p-3 rounded-xl bg-white/2 border border-white/5">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-purple-400" />
-                    <span className="text-white font-bold">Vector Indexer Agent</span>
-                  </div>
-                  <span className="text-gray-400 text-[10px]">Standby • 408 embeddings cached</span>
+                  <span className="text-gray-400 text-[10px]">Standby • No configured agent projects</span>
                 </div>
               </div>
             </div>
@@ -1452,10 +1432,10 @@ export default function CommandCenterDashboard() {
                 <div>
                   <h3 className="text-xs font-mono uppercase tracking-widest text-gray-400 mb-3">ACTIVE RESUME FILE</h3>
                   <div className="bg-black/60 border border-white/10 p-4 rounded-xl space-y-3 font-mono text-xs">
-                    <div className="text-white font-bold truncate">Shouri_Chakraborty_Resume.pdf</div>
+                    <div className="text-white font-bold truncate">Subha_Sankar_Sahu_Resume_Improved.docx</div>
                     <div className="text-[10px] text-gray-500">Updated for 2026 Opportunities</div>
                     <a
-                      href={career.resumeUrl || "/Shouri_Chakraborty_Resume.pdf"}
+                      href={career.resumeUrl || "/Subha_Sankar_Sahu_Resume_Improved.docx"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block w-full text-center bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg transition-all"
@@ -1652,21 +1632,21 @@ export default function CommandCenterDashboard() {
                   <span className="w-3 h-3 rounded-full bg-rose-500/80" />
                   <span className="w-3 h-3 rounded-full bg-amber-500/80" />
                   <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="text-white font-bold ml-2">shouri@command-center:~</span>
+                  <span className="text-white font-bold ml-2">sss@command-center:~</span>
                 </div>
                 <span className="text-[10px]">BASH 5.2</span>
               </div>
 
               <div className="space-y-1.5 h-64 overflow-y-auto text-gray-300">
                 {terminalLogs.map((log, idx) => (
-                  <div key={idx} className={log.startsWith("shouri@") ? "text-emerald-400 font-bold" : "text-gray-300"}>
+                  <div key={idx} className={log.startsWith("sss@") ? "text-emerald-400 font-bold" : "text-gray-300"}>
                     {log}
                   </div>
                 ))}
               </div>
 
               <form onSubmit={handleTerminalSubmit} className="flex items-center gap-2 pt-3 border-t border-white/10">
-                <span className="text-emerald-400 font-bold">shouri@command-center:~$</span>
+                <span className="text-emerald-400 font-bold">sss@command-center:~$</span>
                 <input
                   type="text"
                   value={terminalInput}
@@ -1696,7 +1676,7 @@ export default function CommandCenterDashboard() {
                   <h3 className="text-lg font-bold text-white tracking-tight">BROWSE GITHUB REPOSITORIES</h3>
                 </div>
                 <p className="text-xs text-gray-400 font-mono mt-1">
-                  Live public repositories from <span className="text-purple-300 font-bold">@shouri123</span>
+                  Live public repositories from <span className="text-purple-300 font-bold">@subhasankarsahu</span>
                 </p>
               </div>
               <button 
@@ -1789,7 +1769,7 @@ export default function CommandCenterDashboard() {
             {/* Modal Footer */}
             <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-500 shrink-0">
               <span>Showing {filteredGithubRepos.length} public repos</span>
-              <span>Account: github.com/shouri123</span>
+              <span>Account: github.com/subhasankarsahu</span>
             </div>
 
           </div>

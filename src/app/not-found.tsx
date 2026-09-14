@@ -3,8 +3,8 @@ import { ArrowLeft, Compass, FileText, Home, HelpCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 - Page Not Found | Shouri Chakraborty",
-  description: "The requested path could not be found on devshouri.in. Use the provided links to navigate back to the site map, home, or trust pages.",
+  title: "404 - Page Not Found | Subha Sankar Sahu",
+  description: "The requested path could not be found on Subha Sankar Sahu's portfolio.",
 };
 
 export default function NotFoundPage() {
@@ -20,7 +20,7 @@ export default function NotFoundPage() {
         </h1>
 
         <p className="text-sm text-gray-300 leading-relaxed font-light">
-          The requested path does not exist on <strong>devshouri.in</strong>. If you are an AI crawler or automated agent, please refer to the site map or agent instruction indexes below to recover.
+          The requested path does not exist on <strong>subha-sankar-sahu.vercel.app</strong>. If you are an AI crawler or automated agent, please refer to the site map or agent instruction indexes below to recover.
         </p>
 
         <div className="w-full border-t border-white/10 pt-6 my-2 text-left">
@@ -45,7 +45,7 @@ export default function NotFoundPage() {
             </li>
             <li>
               <Link href="/about" className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 text-white hover:text-primary transition-all">
-                <FileText size={14} /> About Shouri
+                <FileText size={14} /> About Subha
               </Link>
             </li>
             <li>

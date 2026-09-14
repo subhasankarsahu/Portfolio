@@ -100,7 +100,7 @@ export default function FeaturesSection() {
                 <Image src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85" alt="AI projects and code repositories icon" className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover mb-12 mix-blend-screen opacity-80" width={48} height={48} unoptimized />
                 <h3 className="text-primary text-xl md:text-2xl font-medium mb-8">Recent Projects. <span className="text-gray-600 text-sm align-top ml-1">(02)</span></h3>
                 <ul className="space-y-4">
-                  {["Late-Meet (AI Copilot)", "Aven (TypeScript Platform)", "JAVA-Practice Architecture", "House-Prediction-App"].map((item, i) => (
+                  {["LearnVaultX", "JB Ride", "StreamCore", "React Learning Projects"].map((item, i) => (
                     <li key={i} className="flex gap-3 items-start">
                       <Check className="text-primary shrink-0 w-4 h-4 mt-1" />
                       <span className="text-gray-400 text-sm md:text-sm">{item}</span>
@@ -108,7 +108,7 @@ export default function FeaturesSection() {
                   ))}
                 </ul>
               </div>
-              <a href="https://github.com/shouri123" target="_blank" className="flex justify-between items-center text-primary text-sm md:text-sm font-medium hover:text-white transition-colors uppercase tracking-wide mt-8">
+              <a href="https://github.com/subhasankarsahu" target="_blank" className="flex justify-between items-center text-primary text-sm md:text-sm font-medium hover:text-white transition-colors uppercase tracking-wide mt-8">
                 View Github <ArrowRight className="w-4 h-4 -rotate-45" />
               </a>
             </div>

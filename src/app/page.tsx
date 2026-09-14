@@ -14,8 +14,8 @@ export default async function Home() {
   const projectsJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Featured Engineering & AI Projects by Shouri Chakraborty",
-    "description": "A curated collection of open source tools, AI agents, and full stack applications built by Shouri Chakraborty.",
+    "name": "Featured Projects by Subha Sankar Sahu",
+    "description": "A curated collection of full-stack, backend, React, and AI-driven projects built by Subha Sankar Sahu.",
     "itemListElement": projects.map((p, index) => ({
       "@type": "ListItem",
       "position": index + 1,
@@ -28,7 +28,7 @@ export default async function Home() {
         "operatingSystem": "Cross-platform, Web",
         "author": {
           "@type": "Person",
-          "name": "Shouri Chakraborty"
+          "name": "Subha Sankar Sahu"
         }
       }
     }))
@@ -51,7 +51,7 @@ export default async function Home() {
         <div style={{ backgroundColor: "#070707", color: "#e0dfd5", padding: "2.5rem 1.5rem", fontFamily: "system-ui, -apple-system, sans-serif", lineHeight: "1.7", maxWidth: "900px", margin: "0 auto" }}>
           <header style={{ borderBottom: "1px solid rgba(255,255,255,0.15)", paddingBottom: "1.5rem", marginBottom: "2rem" }}>
             <h1 style={{ fontSize: "2.2rem", color: "#ffffff", fontWeight: "800", letterSpacing: "-0.03em", margin: "0 0 0.5rem 0" }}>
-              Shouri Chakraborty — AI Developer, Software Engineer & Open Source Maintainer
+              Subha Sankar Sahu — Full-Stack Developer
             </h1>
             <p style={{ fontSize: "1.1rem", color: "#a1a1aa", margin: 0 }}>
               Building AI-driven products, coding agents, and high-performance web experiences. Based in Kolkata, India. Available for internships and open source collaborations.
@@ -136,16 +136,13 @@ export default async function Home() {
                 Contact & Communication
               </h2>
               <p style={{ color: "#d4d4d8", marginBottom: "0.5rem" }}>
-                Direct Email: <a href="mailto:chakrabortyshouri@gmail.com" style={{ color: "#38bdf8" }}>chakrabortyshouri@gmail.com</a>
+                Direct Email: <a href="mailto:subhasankarsahu5@gmail.com" style={{ color: "#38bdf8" }}>subhasankarsahu5@gmail.com</a>
               </p>
               <p style={{ color: "#d4d4d8", marginBottom: "0.5rem" }}>
-                GitHub Profile: <a href="https://github.com/shouri123" style={{ color: "#38bdf8" }}>https://github.com/shouri123</a>
+                GitHub Profile: <a href="https://github.com/subhasankarsahu" style={{ color: "#38bdf8" }}>https://github.com/subhasankarsahu</a>
               </p>
               <p style={{ color: "#d4d4d8", marginBottom: "0.5rem" }}>
-                LinkedIn: <a href="https://www.linkedin.com/in/shouri-chakraborty-224b5330b/" style={{ color: "#38bdf8" }}>https://www.linkedin.com/in/shouri-chakraborty</a>
-              </p>
-              <p style={{ color: "#d4d4d8" }}>
-                Resume: <a href="https://devshouri.in/Shouri_Chakraborty_Resume.pdf" style={{ color: "#38bdf8" }}>Download Shouri Chakraborty Resume (PDF)</a>
+                Resume: <a href="/Subha_Sankar_Sahu_Resume_Improved.docx" style={{ color: "#38bdf8" }}>Download Subha Sankar Sahu Resume (DOCX)</a>
               </p>
             </footer>
           </main>

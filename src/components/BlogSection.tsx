@@ -17,7 +17,7 @@ interface BlogPost {
   url: string;
 }
 
-// TODO_REPLACE: Original author's hardcoded blog fallback posts and DEV.to username.
+// Static posts keep the section useful when the external feed is unavailable.
 const STATIC_BLOG_POSTS: BlogPost[] = [
   {
     id: 1,
@@ -43,7 +43,7 @@ const STATIC_BLOG_POSTS: BlogPost[] = [
     id: 3,
     title: "YOUR_BLOG_POST_TITLE_HERE",
     excerpt:
-      "How I built Late-Meet: a local-first meeting intelligence companion using VAD and streaming transcription.",
+      "Notes on building practical full-stack projects while learning backend development and React.",
     date: "Feb 2026",
     tag: "Web / Extensions",
     readTime: "6 min read",

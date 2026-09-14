@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { ShieldCheck, Loader2, ArrowRight, Lock } from "lucide-react";
 
 export default function AdminLoginPage() {
-  const [email, setEmail] = useState("shouri@devshouri.in");
+  const [email, setEmail] = useState("subhasankarsahu5@gmail.com");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -52,7 +52,7 @@ export default function AdminLoginPage() {
         <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-8">
           <div className="flex items-center gap-2 text-primary">
             <Lock size={16} />
-            <span className="text-xs uppercase tracking-widest font-bold font-mono">SHOURI // PRIVATE ACCESS</span>
+            <span className="text-xs uppercase tracking-widest font-bold font-mono">SSS // PRIVATE ACCESS</span>
           </div>
           <span className="text-[10px] text-white/30 border border-white/10 px-2 py-0.5 rounded-full font-mono">SECURE</span>
         </div>

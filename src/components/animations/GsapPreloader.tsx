@@ -127,7 +127,7 @@ export default function GsapPreloader({ onComplete }: { onComplete: () => void }
           <header className="relative z-20 flex w-full items-center justify-between px-6 py-6 md:py-10">
             <div>
               <h1 className="uppercase font-light tracking-[0.25em] text-white text-xs md:text-sm">
-                Dev Career FC // 2026
+                Subha Sankar Sahu // 2026
               </h1>
             </div>
             <div>
