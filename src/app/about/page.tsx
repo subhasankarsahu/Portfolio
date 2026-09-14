@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Subha Sankar Sahu | Full-Stack Developer",
-  description: "Learn about Subha Sankar Sahu, a full-stack developer focused on the PERN stack, C++, DSA, and AI-powered web products.",
+  description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-lg md:text-xl text-primary/80 leading-relaxed font-light mb-12 max-w-3xl">
-          Full-stack developer based in Rourkela, India, focused on the PERN stack, C++, DSA fundamentals, and AI-powered web products.
+          I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 border-t border-b border-white/10 py-12">
@@ -35,7 +35,7 @@ export default function AboutPage() {
               <h2 className="text-xl font-semibold uppercase tracking-wider text-white">Education & Background</h2>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Currently pursuing a <strong>B.Tech, 3rd Year</strong> at <strong>Biju Patnaik University of Technology, Rourkela</strong>. Combining rigorous computer science theory with hands-on software engineering projects and open-source contribution.
+              Currently pursuing a <strong>B.Tech, 3rd Year</strong> at <strong>Biju Patnaik University of Technology, Rourkela</strong>, while building practical software projects.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
               <h2 className="text-xl font-semibold uppercase tracking-wider text-white">Technical Specializations</h2>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Deep interest in autonomous agent architectures, local-first LLM inference, vector retrieval databases, speech transcription algorithms (VAD), and modern full-stack web applications built with TypeScript, Next.js, React 19, and Tailwind CSS.
+              Technical focus: PERN stack full-stack development, DSA and C++ fundamentals, and AI-integrated web products.
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="bg-white/3 border border-white/10 rounded-2xl p-6 flex flex-col gap-3">
               <h3 className="font-semibold text-primary">Open Source First</h3>
               <p className="text-xs text-gray-400 leading-relaxed">
-                Building practical projects, learning in public, and contributing to open-source communities.
+                Building practical projects and strengthening software engineering fundamentals.
               </p>
             </div>
           </div>

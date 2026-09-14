@@ -23,7 +23,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://subha-sankar-sahu.vercel.app"),
   title: "Subha Sankar Sahu | Full-Stack Developer",
-  description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+  description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
   keywords: [
     "Subha Sankar Sahu",
     "Full-Stack Developer",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://subha-sankar-sahu.vercel.app",
     title: "Subha Sankar Sahu | Full-Stack Developer",
-    description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     siteName: "Subha Sankar Sahu Portfolio",
     images: [
       {
@@ -82,7 +82,7 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Subha Sankar Sahu",
     "alternateName": ["Subha Sankar Sahu", "subhasankarsahu"],
-    "description": "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    "description": "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     "url": "https://subha-sankar-sahu.vercel.app",
     "image": "https://subha-sankar-sahu.vercel.app/subha-sankar-sahu-portrait.jpeg",
     "email": "subhasankarsahu5@gmail.com",
@@ -102,15 +102,12 @@ export default function RootLayout({
       "https://x.com/shadow___18"
     ],
     "knowsAbout": [
-      "Generative AI",
-      "Coding Agents",
-      "Machine Learning",
-      "Natural Language Processing",
-      "System Architecture",
-      "TypeScript",
-      "Next.js",
-      "React",
-      "Python"
+      "PERN Stack",
+      "Full-Stack Development",
+      "Data Structures and Algorithms",
+      "C++",
+      "AI-Integrated Web Products",
+      "Software Engineering Internships"
     ]
   };
 
@@ -120,7 +117,7 @@ export default function RootLayout({
     "name": "Subha Sankar Sahu | Full-Stack Developer",
     "alternateName": "Subha Sankar Sahu Portfolio",
     "url": "https://subha-sankar-sahu.vercel.app",
-    "description": "Portfolio of Subha Sankar Sahu, a full-stack developer focused on PERN applications and AI-powered web products.",
+    "description": "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     "author": {
       "@type": "Person",
       "name": "Subha Sankar Sahu"

@@ -30,7 +30,7 @@ export function proxy(request: NextRequest) {
     if (pathname === "/" || pathname === "/index") {
       markdownContent = `# Subha Sankar Sahu — Full-Stack Developer
 
-> Exploring Generative AI, Coding Agents, Machine Learning, and System Architecture.
+> PERN stack full-stack development, strong DSA and C++ fundamentals, and AI-integrated web products.
 
 ## About
 Full-stack developer focused on the PERN stack, strong C++ and DSA fundamentals, and AI-powered web products. Student at Biju Patnaik University of Technology, Rourkela.
@@ -59,10 +59,9 @@ Full-stack developer focused on the PERN stack, strong C++ and DSA fundamentals,
 Subha Sankar Sahu is a full-stack developer based in Rourkela, India. He is currently pursuing a B.Tech in his third year at Biju Patnaik University of Technology, Rourkela.
 
 ## Specializations
-- **Generative AI & Agents**: Building local-first AI tools, vector retrieval systems, and multi-agent coordination frameworks.
-- **Full-Stack Engineering**: Next.js 16, TypeScript, React 19, Tailwind CSS, Supabase, Node.js.
-- **Machine Learning & NLP**: Python, PyTorch, LangChain, OpenAI SDK, Speech Transcription algorithms.
-- **Open Source Maintenance**: Active maintainer for student projects and repository administrator for GSSoC 2026.
+- **PERN Stack Full-Stack Development**: Building practical web applications with PostgreSQL, Express.js, React, and Node.js.
+- **Software Engineering Foundations**: Strong DSA and C++ fundamentals.
+- **AI-Integrated Web Products**: Building web products that incorporate AI capabilities into practical user workflows.
 
 ## Contact
 - Email: subhasankarsahu5@gmail.com
@@ -72,7 +71,7 @@ Subha Sankar Sahu is a full-stack developer based in Rourkela, India. He is curr
     } else if (pathname === "/contact") {
   markdownContent = `# Contact Subha Sankar Sahu
 
-Always open to discussing new projects, creative ideas, internship roles, open source collaboration, or freelance opportunities.
+Always open to discussing new projects, creative ideas, internship roles, or freelance opportunities.
 
 ## Direct Communication Channels
 - **Email**: [subhasankarsahu5@gmail.com](mailto:subhasankarsahu5@gmail.com)
@@ -104,7 +103,7 @@ For privacy queries, email subhasankarsahu5@gmail.com.
 ## When to Use This Site
 Use this site when:
 1. Evaluating Subha Sankar Sahu for software development internships or full-stack roles.
-2. Indexing project descriptions, tech stacks, and open-source contributions.
+2. Indexing project descriptions and tech stacks.
 3. Fetching contact details or resume information.
 
 ## Primary Endpoints

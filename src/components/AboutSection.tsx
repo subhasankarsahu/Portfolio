@@ -26,7 +26,7 @@ export default function AboutSection() {
   const headingSegments = [
     { text: "I am Subha Sankar Sahu," },
     { text: "a Full-Stack Developer.", className: "font-serif italic text-white" },
-    { text: "I build AI-integrated web products with strong software engineering fundamentals." }
+    { text: "I build AI-integrated web products and work toward software engineering internships." }
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function AboutSection() {
 
           <div className="w-full max-w-2xl">
             <GsapScrollRevealChars 
-              text="Curiosity. I enjoy breaking concepts down, trying bold ideas, and pushing boundaries with AI. Whether it’s a new tool, a coding agent, or a fresh model architecture — if it’s interesting, I’m jumping in. Currently studying at Biju Patnaik University of Technology, Rourkela, while actively contributing to open source ecosystems."
+              text="I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships."
               className="text-primary/80 text-sm sm:text-base md:text-lg leading-relaxed text-center lg:text-left font-medium"
             />
           </div>

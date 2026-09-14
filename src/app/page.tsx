@@ -54,7 +54,7 @@ export default async function Home() {
               Subha Sankar Sahu — Full-Stack Developer
             </h1>
             <p style={{ fontSize: "1.1rem", color: "#a1a1aa", margin: 0 }}>
-              Building AI-driven products, coding agents, and high-performance web experiences. Based in Kolkata, India. Available for internships and open source collaborations.
+              Building AI-integrated web products with PERN stack full-stack development, strong DSA and C++ fundamentals, and a focus on software engineering internships. Based in Rourkela, India.
             </p>
           </header>
 
@@ -64,10 +64,10 @@ export default async function Home() {
                 About & Engineering Background
               </h2>
               <p style={{ color: "#d4d4d8", marginBottom: "1rem" }}>
-                I am an aspiring Full-Stack Developer pursuing a B.Tech at Biju Patnaik University of Technology, Rourkela. My focus centers on AI-powered web products, strong software engineering fundamentals, and scalable modern web architectures with Next.js and TypeScript.
+                I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.
               </p>
               <p style={{ color: "#d4d4d8" }}>
-                I build practical full-stack projects and continue developing my skills through hands-on work, learning, and open-source collaboration.
+                I am building practical full-stack projects while strengthening my software engineering fundamentals and preparing for software engineering internships.
               </p>
             </section>
 
@@ -125,7 +125,7 @@ export default async function Home() {
               </h2>
               <ul style={{ paddingLeft: "1.25rem", color: "#d4d4d8" }}>
                 <li style={{ marginBottom: "0.5rem" }}><strong>Frontend Engineering:</strong> Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, GSAP Animations, Web Performance Optimization.</li>
-                <li style={{ marginBottom: "0.5rem" }}><strong>AI & Machine Learning:</strong> Generative AI, Autonomous Coding Agents, LangChain, OpenAI Agents SDK, RAG Pipelines, Vector Databases, Local LLM Inference.</li>
+                <li style={{ marginBottom: "0.5rem" }}><strong>AI-Integrated Products:</strong> Building web products that incorporate AI capabilities into practical user workflows.</li>
                 <li style={{ marginBottom: "0.5rem" }}><strong>Backend & Databases:</strong> Node.js, Python 3, Supabase, PostgreSQL, REST APIs, GraphQL, SQLite, Session Security.</li>
                 <li style={{ marginBottom: "0.5rem" }}><strong>DevOps & Automation:</strong> Git, GitHub Actions, Vercel Cron, Linux CLI, Docker, Cloudflare.</li>
               </ul>

@@ -99,13 +99,13 @@ export interface MaintainerMetrics {
 }
 
 let careerData: CareerProfile = {
-  headline: "Developer × Product Designer × Open Source Maintainer",
+  headline: "Full-Stack Developer × DSA Enthusiast × AI Product Builder",
   subheadline: "Building AI-driven products, agentic tools, and cinematic web experiences.",
   availability: "Available for Internships & OSS",
   isAvailable: true,
   preferredRoles: ["AI Engineer", "Full Stack Developer", "Frontend Engineer"],
-  location: "Kolkata, India",
-  bio: "Diving deep into Generative AI, Agentic systems, AI/ML, and NLP. I love exploring new tools, experimenting with emerging tech, and building things that make computers feel a little smarter.",
+  location: "Rourkela, India",
+  bio: "Focused on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products.",
   resumeUrl: "/Subha_Sankar_Sahu_Resume_Improved.docx",
   portraitUrl: "/developer_portrait.jpg"
 };
@@ -165,17 +165,6 @@ let articlesList: ContentArticle[] = [
     summary: "Notes on learning backend development, adaptive learning systems, and React through hands-on projects.",
     content: "Building practical projects creates a feedback loop between learning concepts and applying them..."
   },
-  {
-    id: "art-2",
-    title: "Lessons Learned Administering Open Source Repos in GSSoC 2026",
-    slug: "gssoc-2026-maintainer-learnings",
-    category: "Article",
-    status: "Published",
-    publishedAt: "2026-05-18",
-    readTime: "4 min read",
-    summary: "Reviewing 200+ PRs, managing contributor expectations, and setting up automated CI guardrails.",
-    content: "Open source maintenance at scale is as much about clear communication as code..."
-  }
 ];
 
 let crmMessages: CRMMessage[] = [
@@ -187,7 +176,7 @@ let crmMessages: CRMMessage[] = [
     message: "Your portfolio projects and full-stack work look interesting. Keep up the good work!",
     category: "Collaboration",
     status: "unread",
-    admin_notes: "Follow up about open source project collaborations next week."
+    admin_notes: "Follow up about portfolio opportunities next week."
   },
   {
     id: "msg-2",
