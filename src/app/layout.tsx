@@ -97,7 +97,9 @@ export default function RootLayout({
       "name": "Biju Patnaik University of Technology, Rourkela"
     },
     "sameAs": [
-      "https://github.com/subhasankarsahu"
+      "https://github.com/subhasankarsahu",
+      "https://instagram.com/shadow____.18",
+      "https://x.com/shadow___18"
     ],
     "knowsAbout": [
       "Generative AI",

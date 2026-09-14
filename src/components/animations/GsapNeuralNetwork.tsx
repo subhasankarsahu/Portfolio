@@ -12,9 +12,32 @@ interface SkillNode {
 }
 
 const SKILL_LABELS = [
-  "Next.js", "React", "TypeScript", "Python", 
-  "Supabase", "LLMs", "GSAP", "RAG", "System Design",
-  "Git", "NLP", "C++", "Java", "Docker"
+  "React.js", "Next.js", "JavaScript", "Framer Motion", "Node.js",
+  "Express.js", "FastAPI", "Flask", "Python", "PostgreSQL", "MongoDB",
+  "Supabase", "SQL", "C++", "C", "Java", "Git", "GitHub", "Docker",
+  "Cloudinary", "GSAP", "DSA", "Computer Networks", "Theory of Computation",
+  "Software Engineering"
+];
+
+const SKILL_CONNECTIONS: Array<[string, string]> = [
+  ["React.js", "Next.js"],
+  ["React.js", "Framer Motion"],
+  ["Next.js", "JavaScript"],
+  ["Node.js", "Express.js"],
+  ["Node.js", "FastAPI"],
+  ["Python", "FastAPI"],
+  ["Python", "Flask"],
+  ["PostgreSQL", "Supabase"],
+  ["PostgreSQL", "SQL"],
+  ["MongoDB", "Node.js"],
+  ["Git", "GitHub"],
+  ["GitHub", "Docker"],
+  ["Cloudinary", "Node.js"],
+  ["GSAP", "React.js"],
+  ["C++", "DSA"],
+  ["C", "Computer Networks"],
+  ["Java", "Software Engineering"],
+  ["Theory of Computation", "Software Engineering"]
 ];
 
 export default function GsapNeuralNetwork() {
@@ -46,48 +69,78 @@ export default function GsapNeuralNetwork() {
       const dpr = window.devicePixelRatio || 1;
       canvas.width = width * dpr;
       canvas.height = height * dpr;
-      ctx.scale(dpr, dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       // Re-initialize nodes when resized
       initNodes();
     };
 
     const initNodes = () => {
-      nodes = SKILL_LABELS.map((label) => {
-        const radius = ctx.measureText(label).width / 2 + 10;
+      ctx.font = "8px Courier New, Courier, monospace";
+      const columns = 3;
+      const rows = Math.ceil(SKILL_LABELS.length / columns);
+      const horizontalStep = width / (columns + 1);
+      const verticalStep = height / (rows + 1);
+
+      nodes = SKILL_LABELS.map((label, index) => {
+        const radius = ctx.measureText(label).width / 2 + 9;
+        const column = index % columns;
+        const row = Math.floor(index / columns);
         return {
-          x: Math.random() * (width - 100) + 50,
-          y: Math.random() * (height - 60) + 30,
+          x: horizontalStep * (column + 1),
+          y: verticalStep * (row + 1),
           vx: prefersReducedMotion ? 0 : (Math.random() - 0.5) * 0.4,
           vy: prefersReducedMotion ? 0 : (Math.random() - 0.5) * 0.4,
           label,
           radius,
         };
       });
+
+      for (let pass = 0; pass < 80; pass += 1) {
+        for (let i = 0; i < nodes.length; i += 1) {
+          for (let j = i + 1; j < nodes.length; j += 1) {
+            const first = nodes[i];
+            const second = nodes[j];
+            const dx = second.x - first.x;
+            const dy = second.y - first.y;
+            const distance = Math.hypot(dx, dy) || 0.01;
+            const minimumDistance = first.radius + second.radius + 8;
+            if (distance < minimumDistance) {
+              const adjustment = (minimumDistance - distance) / distance / 2;
+              first.x -= dx * adjustment;
+              first.y -= dy * adjustment;
+              second.x += dx * adjustment;
+              second.y += dy * adjustment;
+            }
+          }
+        }
+        nodes.forEach((node) => {
+          node.x = Math.max(node.radius + 4, Math.min(width - node.radius - 4, node.x));
+          node.y = Math.max(node.radius + 18, Math.min(height - 6, node.y));
+        });
+      }
     };
 
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
 
-      // Draw background network connections
-      const maxDistance = 140;
+      // Draw intentional relationships between related skills.
+      const nodeByLabel = new Map(nodes.map((node) => [node.label, node]));
+      SKILL_CONNECTIONS.forEach(([firstLabel, secondLabel]) => {
+        const first = nodeByLabel.get(firstLabel);
+        const second = nodeByLabel.get(secondLabel);
+        if (!first || !second) return;
+        ctx.strokeStyle = "rgba(222, 219, 200, 0.18)";
+        ctx.lineWidth = 0.6;
+        ctx.beginPath();
+        ctx.moveTo(first.x, first.y);
+        ctx.lineTo(second.x, second.y);
+        ctx.stroke();
+      });
+
+      const maxDistance = 120;
       for (let i = 0; i < nodes.length; i++) {
         const n1 = nodes[i];
-
-        // Draw connections between nodes
-        for (let j = i + 1; j < nodes.length; j++) {
-          const n2 = nodes[j];
-          const dist = Math.hypot(n1.x - n2.x, n1.y - n2.y);
-          if (dist < maxDistance) {
-            const alpha = (1 - dist / maxDistance) * 0.15;
-            ctx.strokeStyle = `rgba(222, 219, 200, ${alpha})`;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(n1.x, n1.y);
-            ctx.lineTo(n2.x, n2.y);
-            ctx.stroke();
-          }
-        }
 
         // Draw connections to mouse
         if (mouseRef.current.active) {
@@ -124,6 +177,20 @@ export default function GsapNeuralNetwork() {
           n1.vx *= 0.98;
           n1.vy *= 0.98;
 
+          // Keep measured labels apart as nodes drift.
+          for (const n2 of nodes) {
+            if (n1 === n2) continue;
+            const dx = n1.x - n2.x;
+            const dy = n1.y - n2.y;
+            const distance = Math.hypot(dx, dy) || 0.01;
+            const minimumDistance = n1.radius + n2.radius + 8;
+            if (distance < minimumDistance) {
+              const force = (minimumDistance - distance) / distance * 0.01;
+              n1.vx += dx * force;
+              n1.vy += dy * force;
+            }
+          }
+
           // Boundary bounce with padding
           const pad = 10;
           if (n1.x < pad || n1.x > width - pad) n1.vx *= -1;
@@ -145,11 +212,16 @@ export default function GsapNeuralNetwork() {
         ctx.fill();
 
         // Draw node text label
-        ctx.font = "11px Courier New, Courier, monospace";
+        ctx.font = "8px Courier New, Courier, monospace";
         ctx.fillStyle = "rgba(225, 224, 204, 0.7)";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillText(n1.label, n1.x, n1.y - 12);
+        const labelWidth = ctx.measureText(n1.label).width;
+        const labelY = n1.y - n1.radius - 4;
+        ctx.fillStyle = "rgba(7, 7, 7, 0.86)";
+        ctx.fillRect(n1.x - labelWidth / 2 - 3, labelY - 6, labelWidth + 6, 12);
+        ctx.fillStyle = "rgba(225, 224, 204, 0.82)";
+        ctx.fillText(n1.label, n1.x, labelY);
       }
 
       animationId = requestAnimationFrame(draw);
@@ -184,7 +256,7 @@ export default function GsapNeuralNetwork() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[280px] md:h-[350px] border border-white/5 rounded-2xl md:rounded-3xl bg-[#070707] overflow-hidden"
+      className="relative w-full h-[430px] md:h-[500px] border border-white/5 rounded-2xl md:rounded-3xl bg-[#070707] overflow-hidden"
     >
       <div className="absolute top-4 left-4 flex items-center gap-2 z-10 pointer-events-none">
         <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />

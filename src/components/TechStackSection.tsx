@@ -23,7 +23,7 @@ const techCategories = [
   },
   {
     title: "Tools & Foundations",
-    techs: ["C++", "C", "Java", "Git", "GitHub", "Docker", "Cloudinary", "Claude Code", "ChatGPT", "GitHub Copilot", "Data Structures & Algorithms", "Computer Networks", "Theory of Computation", "Software Engineering"]
+    techs: ["C++", "C", "Java", "Git", "GitHub", "Docker", "Cloudinary", "GSAP", "DSA", "Computer Networks", "Theory of Computation", "Software Engineering"]
   }
 ];
 
@@ -84,7 +84,7 @@ export default function TechStackSection() {
         
         <div ref={containerRef} className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-16">
           {techCategories.map((cat, i) => (
-            <div key={i} className="tech-category flex flex-col gap-6 group">
+            <div key={i} className={`tech-category flex flex-col gap-6 group ${cat.title === "Tools & Foundations" ? "md:col-span-2" : ""}`}>
               <h3 className="text-xl md:text-2xl font-medium text-[#E1E0CC] tracking-tight flex items-center border-b border-white/10 pb-4 group-hover:border-primary/50 transition-colors duration-500">
                 <span className="text-white/20 text-xs font-mono mr-4">/{(i+1).toString().padStart(2, '0')}</span>
                 {cat.title}

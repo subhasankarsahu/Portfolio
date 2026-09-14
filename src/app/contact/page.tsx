@@ -76,6 +76,12 @@ export default function ContactPage() {
                 <li>
                   GitHub: <a href="https://github.com/subhasankarsahu" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/subhasankarsahu</a>
                 </li>
+                <li>
+                  Instagram: <a href="https://instagram.com/shadow____.18" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">shadow____.18</a> <span className="text-white/30">(TODO_REPLACE)</span>
+                </li>
+                <li>
+                  X: <a href="https://x.com/shadow___18" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">shadow___18</a> <span className="text-white/30">(TODO_REPLACE)</span>
+                </li>
               </ul>
             </div>
           </div>

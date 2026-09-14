@@ -64,10 +64,10 @@ export default async function Home() {
                 About & Engineering Background
               </h2>
               <p style={{ color: "#d4d4d8", marginBottom: "1rem" }}>
-                I am an aspiring AI Engineer and Full Stack Developer pursuing my degree in Computer Science at the Institute of Engineering & Management (IEM), Kolkata. My focus centers on Generative AI, autonomous coding agents, Natural Language Processing (NLP), and scalable modern web architectures with Next.js 16 and TypeScript.
+                I am an aspiring Full-Stack Developer pursuing a B.Tech at Biju Patnaik University of Technology, Rourkela. My focus centers on AI-powered web products, strong software engineering fundamentals, and scalable modern web architectures with Next.js and TypeScript.
               </p>
               <p style={{ color: "#d4d4d8" }}>
-                I actively administer and maintain open-source projects in the developer community, serving as a repository administrator for GirlScript Summer of Code (GSSoC 2026), having conducted over 200+ pull request reviews and triaged high-traffic open-source repositories.
+                I build practical full-stack projects and continue developing my skills through hands-on work, learning, and open-source collaboration.
               </p>
             </section>
 

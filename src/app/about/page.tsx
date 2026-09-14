@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="bg-white/3 border border-white/10 rounded-2xl p-6 flex flex-col gap-3">
               <h3 className="font-semibold text-primary">Open Source First</h3>
               <p className="text-xs text-gray-400 leading-relaxed">
-                Actively maintaining repositories, reviewing PRs, and contributing to open-source communities like GSSoC 2026.
+                Building practical projects, learning in public, and contributing to open-source communities.
               </p>
             </div>
           </div>

@@ -4,7 +4,6 @@ import GsapWordsPullUpMultiStyle from "@/components/animations/GsapWordsPullUpMu
 import GsapScrollRevealChars from "@/components/animations/GsapScrollRevealChars";
 import Gsap3DTilt from "@/components/animations/Gsap3DTilt";
 import Image from "next/image";
-import GssocBadge from "@/components/GssocBadge";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 
@@ -46,7 +45,7 @@ export default function AboutSection() {
 
           <div className="w-full max-w-2xl">
             <GsapScrollRevealChars 
-              text="Curiosity. I enjoy breaking concepts down, trying bold ideas, and pushing boundaries with AI. Whether it’s a new tool, a coding agent, or a fresh model architecture — if it’s interesting, I’m jumping in. Currently studying Computer Science at IEM Kolkata while actively contributing to open source ecosystems."
+              text="Curiosity. I enjoy breaking concepts down, trying bold ideas, and pushing boundaries with AI. Whether it’s a new tool, a coding agent, or a fresh model architecture — if it’s interesting, I’m jumping in. Currently studying at Biju Patnaik University of Technology, Rourkela, while actively contributing to open source ecosystems."
               className="text-primary/80 text-sm sm:text-base md:text-lg leading-relaxed text-center lg:text-left font-medium"
             />
           </div>
@@ -63,7 +62,6 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <GssocBadge />
         </div>
 
         {/* Right Column: Portrait Card with 3D Tilt */}
@@ -91,7 +89,7 @@ export default function AboutSection() {
                     alt="Portrait of Subha Sankar Sahu" 
                     fill
                     sizes="(max-w-768px) 280px, 320px"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 
