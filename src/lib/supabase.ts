@@ -80,6 +80,10 @@ export const DEFAULT_PROJECTS: Project[] = [
   }
 ];
 
+export function invalidateProjectsCache() {
+  projectsCache = null;
+}
+
 export async function fetchProjects() {
   const now = Date.now();
   if (projectsCache && now - projectsCache.timestamp < CACHE_DURATION) {

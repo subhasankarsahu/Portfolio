@@ -293,9 +293,15 @@ export default function CommandCenterDashboard() {
       if (res.ok) {
         setEditingProject(null);
         loadDashboardData();
+      } else {
+        const data = await res.json().catch(() => null);
+        setSyncToast(data?.error || "Failed to save project.");
+        setTimeout(() => setSyncToast(null), 4000);
       }
     } catch (err) {
       console.error("Failed to save project:", err);
+      setSyncToast("Failed to save project.");
+      setTimeout(() => setSyncToast(null), 4000);
     }
   };
 
