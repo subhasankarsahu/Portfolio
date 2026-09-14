@@ -102,7 +102,7 @@ export default function CareerModePreloader({ onComplete }: { onComplete: () => 
 
       {/* Bottom context details */}
       <div className="relative z-10 text-[9px] text-white/30 uppercase tracking-widest text-center">
-        <span>loading portfolio 2026 // subha-sankar-sahu.vercel.app</span>
+        <span>loading portfolio 2026 // subhasankarsahu-portfolio.vercel.app</span>
       </div>
     </div>
   );

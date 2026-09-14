@@ -21,7 +21,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://subha-sankar-sahu.vercel.app"),
+  metadataBase: new URL("https://subhasankarsahu-portfolio.vercel.app"),
   title: "Subha Sankar Sahu | Full-Stack Developer",
   description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
   keywords: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://subha-sankar-sahu.vercel.app",
+    url: "https://subhasankarsahu-portfolio.vercel.app",
     title: "Subha Sankar Sahu | Full-Stack Developer",
     description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     siteName: "Subha Sankar Sahu Portfolio",
@@ -83,8 +83,8 @@ export default function RootLayout({
     "name": "Subha Sankar Sahu",
     "alternateName": ["Subha Sankar Sahu", "subhasankarsahu"],
     "description": "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
-    "url": "https://subha-sankar-sahu.vercel.app",
-    "image": "https://subha-sankar-sahu.vercel.app/subha-sankar-sahu-portrait.jpeg",
+    "url": "https://subhasankarsahu-portfolio.vercel.app",
+    "image": "https://subhasankarsahu-portfolio.vercel.app/subha-sankar-sahu-portrait.jpeg",
     "email": "subhasankarsahu5@gmail.com",
     "jobTitle": "Full-Stack Developer",
     "address": {
@@ -116,7 +116,7 @@ export default function RootLayout({
     "@type": "WebSite",
     "name": "Subha Sankar Sahu | Full-Stack Developer",
     "alternateName": "Subha Sankar Sahu Portfolio",
-    "url": "https://subha-sankar-sahu.vercel.app",
+    "url": "https://subhasankarsahu-portfolio.vercel.app",
     "description": "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     "author": {
       "@type": "Person",
@@ -128,14 +128,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "name": "Subha Sankar Sahu — Developer Profile",
-    "url": "https://subha-sankar-sahu.vercel.app",
+    "url": "https://subhasankarsahu-portfolio.vercel.app",
     "mainEntity": personJsonLd
   };
 
   return (
     <html lang="en" className={`${almarai.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://subha-sankar-sahu.vercel.app" />
+        <link rel="canonical" href="https://subhasankarsahu-portfolio.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}

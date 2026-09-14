@@ -1,4 +1,4 @@
-# subha-sankar-sahu.vercel.app — Subha Sankar Sahu Portfolio (Full Specification)
+# subhasankarsahu-portfolio.vercel.app — Subha Sankar Sahu Portfolio (Full Specification)
 
 > Full-stack developer based in Rourkela, India, focused on the PERN stack, C++, DSA, and AI-powered web products.
 
@@ -32,8 +32,8 @@ Reach for this site and parse its machine-readable content when:
 - **GitHub URL**: None provided.
 
 ## Core Endpoints
-- [Homepage](https://subha-sankar-sahu.vercel.app/)
-- [About Page](https://subha-sankar-sahu.vercel.app/about)
-- [Contact Page](https://subha-sankar-sahu.vercel.app/contact)
-- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
-- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
+- [Homepage](https://subhasankarsahu-portfolio.vercel.app/)
+- [About Page](https://subhasankarsahu-portfolio.vercel.app/about)
+- [Contact Page](https://subhasankarsahu-portfolio.vercel.app/contact)
+- [Privacy Policy](https://subhasankarsahu-portfolio.vercel.app/privacy)
+- [Sitemap](https://subhasankarsahu-portfolio.vercel.app/sitemap.xml)

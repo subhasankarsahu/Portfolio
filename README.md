@@ -172,4 +172,4 @@ The easiest way to deploy this portfolio is using Vercel:
 * **Developer**: Subha Sankar Sahu
 * **GitHub**: [@subhasankarsahu](https://github.com/subhasankarsahu)
 * **Email**: [subhasankarsahu5@gmail.com](mailto:subhasankarsahu5@gmail.com)
-* **Website**: [subha-sankar-sahu.vercel.app](https://subha-sankar-sahu.vercel.app)
+* **Website**: [subhasankarsahu-portfolio.vercel.app](https://subhasankarsahu-portfolio.vercel.app)

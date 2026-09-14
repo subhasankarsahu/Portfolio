@@ -20,7 +20,7 @@ export default function NotFoundPage() {
         </h1>
 
         <p className="text-sm text-gray-300 leading-relaxed font-light">
-          The requested path does not exist on <strong>subha-sankar-sahu.vercel.app</strong>. If you are an AI crawler or automated agent, please refer to the site map or agent instruction indexes below to recover.
+          The requested path does not exist on <strong>subhasankarsahu-portfolio.vercel.app</strong>. If you are an AI crawler or automated agent, please refer to the site map or agent instruction indexes below to recover.
         </p>
 
         <div className="w-full border-t border-white/10 pt-6 my-2 text-left">

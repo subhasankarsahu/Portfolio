@@ -426,7 +426,7 @@ export default function CommandCenterDashboard() {
       newLogs.push(`  • Longest Streak: ${systemStats.metrics?.longestStreak || 23} days`);
       newLogs.push(`  • Active Repos: ${systemStats.maintainerMetrics?.activeProjects || 3}`);
     } else if (cmd === "health" || cmd === "telemetry") {
-      newLogs.push(`[DATABASE TELEMETRY] Node: Supabase PostgreSQL (subha-sankar-sahu.vercel.app)`);
+      newLogs.push(`[DATABASE TELEMETRY] Node: Supabase PostgreSQL (subhasankarsahu-portfolio.vercel.app)`);
       newLogs.push(`  • Status: ${systemStats.health?.database || "Operational"}`);
       newLogs.push(`  • Latency: ${systemStats.health?.databaseMs || 24}ms round-trip`);
       newLogs.push(`  • Last Health Check: ${systemStats.health?.lastCheck ? new Date(systemStats.health.lastCheck).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "08:30 IST"} (Automated Cron)`);
@@ -624,7 +624,7 @@ export default function CommandCenterDashboard() {
               <ExternalLink className="w-3.5 h-3.5" />
               Public Portfolio
             </span>
-            <span className="text-[10px] font-mono text-gray-500">subha-sankar-sahu.vercel.app</span>
+              <span className="text-[10px] font-mono text-gray-500">subhasankarsahu-portfolio.vercel.app</span>
           </a>
 
           <button

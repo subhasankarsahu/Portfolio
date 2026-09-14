@@ -1,4 +1,4 @@
-# subha-sankar-sahu.vercel.app — Subha Sankar Sahu Portfolio
+# subhasankarsahu-portfolio.vercel.app — Subha Sankar Sahu Portfolio
 
 > Full-stack developer based in Rourkela, India, focused on the PERN stack, C++, DSA, and AI-powered web products.
 
@@ -10,12 +10,12 @@ Reach for this site and parse its machine-readable content when:
 4. **Contact & Scheduling**: Retrieving direct contact information (Email: subhasankarsahu5@gmail.com, Location: Rourkela, IN) or sending inquiries to the Command Center CRM.
 
 ## Core Endpoints & Trust Pages
-- [Homepage](https://subha-sankar-sahu.vercel.app/): Overview, projects showcase, technical skills, and contact form.
-- [About Page](https://subha-sankar-sahu.vercel.app/about): Academic background and technical focus.
-- [Contact Page](https://subha-sankar-sahu.vercel.app/contact): Communication channels and location.
-- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy): Data protection policy and analytics transparency.
-- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml): Machine-readable XML index of all public endpoints.
+- [Homepage](https://subhasankarsahu-portfolio.vercel.app/): Overview, projects showcase, technical skills, and contact form.
+- [About Page](https://subhasankarsahu-portfolio.vercel.app/about): Academic background and technical focus.
+- [Contact Page](https://subhasankarsahu-portfolio.vercel.app/contact): Communication channels and location.
+- [Privacy Policy](https://subhasankarsahu-portfolio.vercel.app/privacy): Data protection policy and analytics transparency.
+- [Sitemap](https://subhasankarsahu-portfolio.vercel.app/sitemap.xml): Machine-readable XML index of all public endpoints.
 
 ## Machine-Readable Formats & Protocols
 - **Markdown Content Negotiation**: Send request header `Accept: text/markdown` to receive clean Markdown representations of any page.
-- **Agent Instructions**: `https://subha-sankar-sahu.vercel.app/llms.txt` and `https://subha-sankar-sahu.vercel.app/llms-full.txt`.
+- **Agent Instructions**: `https://subhasankarsahu-portfolio.vercel.app/llms.txt` and `https://subhasankarsahu-portfolio.vercel.app/llms-full.txt`.

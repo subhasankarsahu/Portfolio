@@ -46,11 +46,11 @@ Full-stack developer focused on the PERN stack, strong C++ and DSA fundamentals,
 - GitHub: https://github.com/subhasankarsahu
 
 ## Site Index
-- [About](https://subha-sankar-sahu.vercel.app/about)
-- [Contact](https://subha-sankar-sahu.vercel.app/contact)
-- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
-- [LLMs.txt](https://subha-sankar-sahu.vercel.app/llms.txt)
-- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
+- [About](https://subhasankarsahu-portfolio.vercel.app/about)
+- [Contact](https://subhasankarsahu-portfolio.vercel.app/contact)
+- [Privacy Policy](https://subhasankarsahu-portfolio.vercel.app/privacy)
+- [LLMs.txt](https://subhasankarsahu-portfolio.vercel.app/llms.txt)
+- [Sitemap](https://subhasankarsahu-portfolio.vercel.app/sitemap.xml)
 `;
     } else if (pathname === "/about") {
       markdownContent = `# About Subha Sankar Sahu
@@ -66,7 +66,7 @@ Subha Sankar Sahu is a full-stack developer based in Rourkela, India. He is curr
 ## Contact
 - Email: subhasankarsahu5@gmail.com
 - Location: Rourkela, India
-- Website: https://subha-sankar-sahu.vercel.app
+- Website: https://subhasankarsahu-portfolio.vercel.app
 `;
     } else if (pathname === "/contact") {
   markdownContent = `# Contact Subha Sankar Sahu
@@ -107,25 +107,25 @@ Use this site when:
 3. Fetching contact details or resume information.
 
 ## Primary Endpoints
-- [Home](https://subha-sankar-sahu.vercel.app/)
-- [About](https://subha-sankar-sahu.vercel.app/about)
-- [Contact](https://subha-sankar-sahu.vercel.app/contact)
-- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
-- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
+- [Home](https://subhasankarsahu-portfolio.vercel.app/)
+- [About](https://subhasankarsahu-portfolio.vercel.app/about)
+- [Contact](https://subhasankarsahu-portfolio.vercel.app/contact)
+- [Privacy Policy](https://subhasankarsahu-portfolio.vercel.app/privacy)
+- [Sitemap](https://subhasankarsahu-portfolio.vercel.app/sitemap.xml)
 `;
     } else {
       statusCode = 404;
       markdownContent = `# 404 - Page Not Found
 
-The path \`${pathname}\` does not exist on subha-sankar-sahu.vercel.app.
+The path \`${pathname}\` does not exist on subhasankarsahu-portfolio.vercel.app.
 
 ## Available Index Pages:
-- [Home](https://subha-sankar-sahu.vercel.app/)
-- [Sitemap](https://subha-sankar-sahu.vercel.app/sitemap.xml)
-- [LLMs.txt](https://subha-sankar-sahu.vercel.app/llms.txt)
-- [About](https://subha-sankar-sahu.vercel.app/about)
-- [Contact](https://subha-sankar-sahu.vercel.app/contact)
-- [Privacy Policy](https://subha-sankar-sahu.vercel.app/privacy)
+- [Home](https://subhasankarsahu-portfolio.vercel.app/)
+- [Sitemap](https://subhasankarsahu-portfolio.vercel.app/sitemap.xml)
+- [LLMs.txt](https://subhasankarsahu-portfolio.vercel.app/llms.txt)
+- [About](https://subhasankarsahu-portfolio.vercel.app/about)
+- [Contact](https://subhasankarsahu-portfolio.vercel.app/contact)
+- [Privacy Policy](https://subhasankarsahu-portfolio.vercel.app/privacy)
 `;
     }
 

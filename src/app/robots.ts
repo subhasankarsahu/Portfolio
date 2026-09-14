@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin', '/admin/login'],
     },
-    sitemap: 'https://subha-sankar-sahu.vercel.app/sitemap.xml',
+    sitemap: 'https://subhasankarsahu-portfolio.vercel.app/sitemap.xml',
   };
 }
