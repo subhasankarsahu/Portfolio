@@ -28,6 +28,10 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Keep Turbopack module resolution inside this app when a parent folder has a lockfile.
+  turbopack: {
+    root: process.cwd(),
+  },
   async headers() {
     return [
       {

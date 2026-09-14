@@ -52,10 +52,10 @@ export async function POST() {
   try {
     // 1. Fetch user profile, repos, events, and contributions in parallel with cache-busting
     const [userRes, reposRes, eventsRes, contribRes] = await Promise.allSettled([
-      fetch("https://api.github.com/users/shouri123", { headers, cache: "no-store" }),
-      fetch("https://api.github.com/users/shouri123/repos?per_page=100&sort=updated", { headers, cache: "no-store" }),
-      fetch("https://api.github.com/users/shouri123/events?per_page=30", { headers, cache: "no-store" }),
-      fetch("https://github-contributions-api.jogruber.de/v4/shouri123", { headers, cache: "no-store" })
+      fetch("https://api.github.com/users/subhasankarsahu", { headers, cache: "no-store" }),
+      fetch("https://api.github.com/users/subhasankarsahu/repos?per_page=100&sort=updated", { headers, cache: "no-store" }),
+      fetch("https://api.github.com/users/subhasankarsahu/events?per_page=30", { headers, cache: "no-store" }),
+      fetch("https://github-contributions-api.jogruber.de/v4/subhasankarsahu", { headers, cache: "no-store" })
     ]);
 
     let publicReposCount = 19;
@@ -126,7 +126,7 @@ export async function POST() {
         lastActivityTime = getRelativeTime(rawEvents[0].created_at);
 
         for (const evt of rawEvents.slice(0, 15)) {
-          const repoName = (evt.repo?.name || "").replace(/^shouri123\//, "");
+          const repoName = (evt.repo?.name || "").replace(/^subhasankarsahu\//, "");
           const timeLabel = getRelativeTime(evt.created_at);
           let action = "Activity on GitHub";
           let type: GitHubActivityEvent["type"] = "commit_pushed";

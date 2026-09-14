@@ -9,7 +9,6 @@ import TechStackSection from '@/components/TechStackSection';
 import ProjectsShowcase from '@/components/ProjectsShowcase';
 import AchievementsSection from '@/components/AchievementsSection';
 import GithubContributions from '@/components/GithubContributions';
-import BlogSection from '@/components/BlogSection';
 import FooterSection from '@/components/FooterSection';
 
 interface Project {
@@ -70,7 +69,6 @@ export default function HomeClient({ initialProjects }: HomeClientProps) {
         <ProjectsShowcase projects={initialProjects} />
         <AchievementsSection />
         <GithubContributions />
-        <BlogSection />
         <FooterSection />
       </main>
     </>

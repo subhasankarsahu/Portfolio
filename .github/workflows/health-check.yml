@@ -21,7 +21,7 @@ jobs:
           fi
 
           echo "Pinging production health & telemetry endpoint..."
-          RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" -X GET "https://devshouri.in/api/cron/health" \
+          RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" -X GET "https://subha-sankar-sahu.vercel.app/api/cron/health" \
             -H "$AUTH_HEADER" \
             -H "Accept: application/json")
 

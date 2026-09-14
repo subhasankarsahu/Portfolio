@@ -77,7 +77,7 @@ export default function CommandPalette() {
   }, []);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("chakrabortyshouri@gmail.com");
+    navigator.clipboard.writeText("subhasankarsahu5@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -131,15 +131,6 @@ export default function CommandPalette() {
       }
     },
     {
-      title: "Jump to Blog / Lab",
-      category: "Navigation",
-      icon: BookOpen,
-      action: () => {
-        router.push("/");
-        setTimeout(() => document.getElementById("blog")?.scrollIntoView({ behavior: "smooth" }), 200);
-      }
-    },
-    {
       title: "Jump to Contact Footer",
       category: "Navigation",
       icon: MessageSquare,
@@ -158,7 +149,7 @@ export default function CommandPalette() {
       title: "Download Professional Resume",
       category: "Utility",
       icon: Download,
-      action: () => window.open("/Shouri_Chakraborty_Resume.pdf", "_blank")
+      action: () => window.open("/Subha_Sankar_Sahu_Resume_Improved.docx", "_blank")
     },
     {
       title: "Go to Secure Admin Terminal",

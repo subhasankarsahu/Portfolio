@@ -166,8 +166,8 @@ export default function UltimateTeamCard() {
             {/* Portrait Frame */}
             <div className="relative w-[150px] sm:w-[170px] h-[190px] sm:h-[210px] rounded-2xl overflow-hidden border border-[#FFD700]/10 bg-black/40 shadow-inner">
               <Image
-                src="/developer_portrait.jpg"
-                alt="Shouri Chakraborty"
+                src="/subha-sankar-sahu-portrait.jpeg"
+                alt="Portrait of Subha Sankar Sahu"
                 fill
                 sizes="170px"
                 className="object-cover object-top"

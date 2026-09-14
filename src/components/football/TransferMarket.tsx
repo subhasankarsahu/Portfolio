@@ -72,7 +72,7 @@ export default function TransferMarket() {
           {/* Standard Resume buttons as "Scouting Reports" */}
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="/Shouri_Chakraborty_Resume.pdf"
+              href="/Subha_Sankar_Sahu_Resume_Improved.docx"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-bold tracking-widest uppercase bg-white/5 border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-300 px-5 py-3 rounded-full flex items-center gap-2"

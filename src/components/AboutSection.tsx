@@ -25,9 +25,9 @@ export default function AboutSection() {
     }
   };
   const headingSegments = [
-    { text: "I am Shouri Chakraborty," },
-    { text: "an aspiring developer.", className: "font-serif italic text-white" },
-    { text: "I love exploring AI systems and building tools that make computers feel smarter." }
+    { text: "I am Subha Sankar Sahu," },
+    { text: "a Full-Stack Developer.", className: "font-serif italic text-white" },
+    { text: "I build AI-integrated web products with strong software engineering fundamentals." }
   ];
 
   return (
@@ -55,11 +55,11 @@ export default function AboutSection() {
           <div className="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-white/10 w-full text-left mb-8">
             <div>
               <h5 className="text-primary text-xs font-mono font-bold uppercase tracking-wider">Institution</h5>
-              <p className="text-white text-xs sm:text-sm mt-1">IEM Kolkata (BCA)</p>
+              <p className="text-white text-xs sm:text-sm mt-1">Biju Patnaik University of Technology, Rourkela — B.Tech, 3rd Year</p>
             </div>
             <div>
               <h5 className="text-primary text-xs font-mono font-bold uppercase tracking-wider">Focus Areas</h5>
-              <p className="text-white text-xs sm:text-sm mt-1">GenAI, Agents, NLP</p>
+              <p className="text-white text-xs sm:text-sm mt-1">PERN, DSA, AI-powered web products</p>
             </div>
           </div>
 
@@ -87,8 +87,8 @@ export default function AboutSection() {
                   className="relative grow my-4 rounded-xl overflow-hidden bg-black/40 border border-white/5 flex items-center justify-center cursor-pointer select-none"
                 >
                   <Image 
-                    src="/developer_portrait.jpg" 
-                    alt="Shouri Chakraborty portrait" 
+                    src="/subha-sankar-sahu-portrait.jpeg" 
+                    alt="Portrait of Subha Sankar Sahu" 
                     fill
                     sizes="(max-w-768px) 280px, 320px"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -98,7 +98,7 @@ export default function AboutSection() {
                 {/* Card footer details */}
                 <div className="flex items-center justify-between pt-2">
                   <div>
-                    <h4 className="text-white text-xs font-bold tracking-wide">Shouri Chakraborty</h4>
+                    <h4 className="text-white text-xs font-bold tracking-wide">Subha Sankar Sahu</h4>
                     <p className="text-white/40 text-[9px] uppercase tracking-wider font-mono">Builder // Developer</p>
                   </div>
                   <span className="text-[9px] font-mono text-primary bg-primary/5 px-2 py-0.5 rounded border border-primary/20">

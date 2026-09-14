@@ -22,25 +22,24 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devshouri.in"),
-  title: "Shouri Chakraborty | AI Developer & Software Engineer",
-  description: "Explore the portfolio of Shouri Chakraborty, an aspiring developer and AI engineer in Kolkata specializing in Generative AI, coding agents, NLP, and Next.js.",
+  metadataBase: new URL("https://subha-sankar-sahu.vercel.app"),
+  title: "Subha Sankar Sahu | Full-Stack Developer",
+  description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
   keywords: [
-    "Shouri Chakraborty",
-    "Shouri",
-    "Chakraborty",
-    "Developer Portfolio",
-    "AI Engineer",
-    "Software Engineer",
-    "Kolkata Developer",
-    "IEM Kolkata",
-    "Next.js Developer",
-    "Generative AI",
-    "Coding Agents"
+    "Subha Sankar Sahu",
+    "Full-Stack Developer",
+    "PERN Stack",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "C++",
+    "Data Structures and Algorithms",
+    "AI-powered web products"
   ],
-  authors: [{ name: "Shouri Chakraborty" }],
-  creator: "Shouri Chakraborty",
-  publisher: "Shouri Chakraborty",
+  authors: [{ name: "Subha Sankar Sahu" }],
+  creator: "Subha Sankar Sahu",
+  publisher: "Subha Sankar Sahu",
   robots: {
     index: true,
     follow: true,
@@ -48,29 +47,29 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/developer_portrait.jpg",
+    apple: "/subha-sankar-sahu-portrait.jpeg",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://devshouri.in",
-    title: "Shouri Chakraborty | AI Developer & Software Engineer",
-    description: "Explore the portfolio of Shouri Chakraborty, an aspiring developer and AI engineer in Kolkata specializing in Generative AI, coding agents, NLP, and Next.js.",
-    siteName: "Shouri Chakraborty Portfolio",
+    url: "https://subha-sankar-sahu.vercel.app",
+    title: "Subha Sankar Sahu | Full-Stack Developer",
+    description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    siteName: "Subha Sankar Sahu Portfolio",
     images: [
       {
-        url: "/developer_portrait.jpg",
+        url: "/subha-sankar-sahu-portrait.jpeg",
         width: 800,
         height: 800,
-        alt: "Shouri Chakraborty portrait",
+        alt: "Portrait of Subha Sankar Sahu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shouri Chakraborty | AI Developer & Software Engineer",
-    description: "Explore the portfolio of Shouri Chakraborty, an aspiring developer and AI engineer in Kolkata specializing in Generative AI, coding agents, NLP, and Next.js.",
-    images: ["/developer_portrait.jpg"],
+    title: "Subha Sankar Sahu | Full-Stack Developer",
+    description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    images: ["/subha-sankar-sahu-portrait.jpeg"],
   },
 };
 
@@ -82,27 +81,24 @@ export default function RootLayout({
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Shouri Chakraborty",
-    "alternateName": ["Shouri", "devshouri", "Shouri Chakraborty Portfolio", "shouri123"],
-    "description": "Shouri Chakraborty is an AI Developer and Software Engineer based in Kolkata, specializing in Generative AI, coding agents, NLP, and modern full-stack web applications.",
-    "url": "https://devshouri.in",
-    "image": "https://devshouri.in/developer_portrait.jpg",
-    "email": "chakrabortyshouri@gmail.com",
-    "jobTitle": "AI Developer & Software Engineer",
+    "name": "Subha Sankar Sahu",
+    "alternateName": ["Subha Sankar Sahu", "subhasankarsahu"],
+    "description": "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    "url": "https://subha-sankar-sahu.vercel.app",
+    "image": "https://subha-sankar-sahu.vercel.app/subha-sankar-sahu-portrait.jpeg",
+    "email": "subhasankarsahu5@gmail.com",
+    "jobTitle": "Full-Stack Developer",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Kolkata",
-      "addressRegion": "West Bengal",
+      "addressLocality": "Rourkela",
       "addressCountry": "IN"
     },
     "alumniOf": {
       "@type": "EducationalOrganization",
-      "name": "Institute of Engineering & Management, Kolkata"
+      "name": "Biju Patnaik University of Technology, Rourkela"
     },
     "sameAs": [
-      "https://github.com/shouri123",
-      "https://www.linkedin.com/in/shouri-chakraborty-224b5330b/",
-      "https://instagram.com/shourichakraborty"
+      "https://github.com/subhasankarsahu"
     ],
     "knowsAbout": [
       "Generative AI",
@@ -120,28 +116,28 @@ export default function RootLayout({
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Shouri Chakraborty | AI Developer & Software Engineer",
-    "alternateName": "Shouri Portfolio",
-    "url": "https://devshouri.in",
-    "description": "Professional developer portfolio of Shouri Chakraborty, specializing in Next.js, Generative AI, and Agentic systems.",
+    "name": "Subha Sankar Sahu | Full-Stack Developer",
+    "alternateName": "Subha Sankar Sahu Portfolio",
+    "url": "https://subha-sankar-sahu.vercel.app",
+    "description": "Portfolio of Subha Sankar Sahu, a full-stack developer focused on PERN applications and AI-powered web products.",
     "author": {
       "@type": "Person",
-      "name": "Shouri Chakraborty"
+      "name": "Subha Sankar Sahu"
     }
   };
 
   const profilePageJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "name": "Shouri Chakraborty — Developer Profile",
-    "url": "https://devshouri.in",
+    "name": "Subha Sankar Sahu — Developer Profile",
+    "url": "https://subha-sankar-sahu.vercel.app",
     "mainEntity": personJsonLd
   };
 
   return (
     <html lang="en" className={`${almarai.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://devshouri.in" />
+        <link rel="canonical" href="https://subha-sankar-sahu.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}

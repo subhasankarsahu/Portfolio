@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin', '/admin/login'],
     },
-    sitemap: 'https://devshouri.in/sitemap.xml',
+    sitemap: 'https://subha-sankar-sahu.vercel.app/sitemap.xml',
   };
 }

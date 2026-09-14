@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+const GITHUB_USERNAME = "subhasankarsahu";
+
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
@@ -18,7 +20,7 @@ export async function GET() {
     // 1. Fetch user profile for public repo count
     let publicRepos = 19;
     try {
-      const userRes = await fetch("https://api.github.com/users/shouri123", { 
+      const userRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`, { 
         headers,
         cache: "no-store"
       });
@@ -34,7 +36,7 @@ export async function GET() {
     let totalContributions = 1821;
     let longestStreak = 23;
     try {
-      const contribRes = await fetch("https://github-contributions-api.jogruber.de/v4/shouri123", {
+      const contribRes = await fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}`, {
         headers,
         cache: "no-store"
       });

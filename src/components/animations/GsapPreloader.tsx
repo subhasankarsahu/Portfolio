@@ -141,10 +141,10 @@ export default function GsapPreloader({ onComplete }: { onComplete: () => void }
           <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 sm:px-8 max-w-4xl mx-auto my-auto gap-8">
             <h2 className="text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.08] tracking-tight flex flex-col items-center uppercase select-none">
               <span className="block overflow-hidden font-preloader-sans font-light px-4">
-                <StaggeredFade text="SHOURI" delayOffset={0.2} />
+                <StaggeredFade text="SUBHA" delayOffset={0.2} />
               </span>
               <span className="block overflow-hidden font-preloader-serif font-normal text-primary px-6">
-                <StaggeredFade text="CHAKRABORTY" delayOffset={0.5} />
+                <StaggeredFade text="SANKAR SAHU" delayOffset={0.5} />
               </span>
             </h2>
 
@@ -154,9 +154,9 @@ export default function GsapPreloader({ onComplete }: { onComplete: () => void }
               transition={{ duration: 0.8, delay: 1.4, ease: [0.2, 0.65, 0.3, 0.9] }}
               className="text-white/70 font-light leading-relaxed max-w-md text-xs sm:text-sm md:text-base font-preloader-sans"
             >
-              An odyssey through generative AI, agentic systems,
+              Building full-stack products with strong fundamentals,
               <br className="hidden sm:block" />
-              and modern interfaces, driven by curiosity and build-first design.
+              AI-powered web experiences, and a curiosity to keep learning.
             </motion.p>
 
             <motion.button
@@ -172,7 +172,7 @@ export default function GsapPreloader({ onComplete }: { onComplete: () => void }
 
           {/* Footer watermark */}
           <footer className="relative z-20 w-full px-6 py-6 flex items-center justify-between text-[10px] text-white/40 uppercase tracking-widest">
-            <span>© 2026 SHOURI</span>
+            <span>© 2026 SUBHA SANKAR SAHU</span>
             <span>engineered for the future</span>
           </footer>
         </motion.div>

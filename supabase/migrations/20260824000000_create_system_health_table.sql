@@ -34,5 +34,5 @@ WITH CHECK (true);
 
 -- Seed initial current record if table is empty
 INSERT INTO public.system_health (id, last_check_at, status, latency_ms, projects_count, unread_messages_count, github_stars, metadata)
-VALUES ('current', NOW(), 'operational', 24, 10, 0, 92, '{"runtime": "Next.js App Router", "checked_by": "initial_seed"}'::jsonb)
+VALUES ('current', NOW(), 'operational', 0, 5, 0, 0, '{"runtime": "Next.js App Router", "checked_by": "initial_seed"}'::jsonb)
 ON CONFLICT (id) DO NOTHING;

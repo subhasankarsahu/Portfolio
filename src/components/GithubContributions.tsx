@@ -131,7 +131,7 @@ export default function GithubContributions() {
               </div>
             ) : (
               <GitHubCalendar
-                username="shouri123"
+                username="subhasankarsahu"
                 colorScheme="dark"
                 theme={customTheme}
                 blockSize={18}

@@ -10,37 +10,37 @@ gsap.registerPlugin(ScrollTrigger);
 const ACHIEVEMENTS = [
   {
     id: 1,
-    title: "Web-A-Thon 2026",
-    subtitle: "2nd Position – website building using Generative AI",
-    description: "Awarded 2nd prize at Analytica (The Business Analytics Club, IEM Kolkata) for building 'Go-Tut', an innovative tutor-finding platform powered by AI.",
-    date: "05/02/2026",
+    title: "Full Stack Web Development",
+    subtitle: "Coursera Certification",
+    description: "Completed Coursera certification in Full Stack Web Development.",
+    date: "TODO_REPLACE: CERTIFICATION_DATE_HERE",
     icon: Trophy,
     category: "Competition"
   },
   {
     id: 2,
-    title: "GSSoC 2026",
-    subtitle: "Project Admin, Contributor & Ambassador",
-    description: "Selected under the Open Source and AI/Agents tracks. Led administration for 'Late-Meet', collaborating with contributors globally to promote AI innovation.",
-    date: "Summer 2026",
+    title: "Python Programming",
+    subtitle: "Coursera Certification",
+    description: "Completed Coursera certification in Python Programming.",
+    date: "TODO_REPLACE: CERTIFICATION_DATE_HERE",
     icon: Award,
     category: "Open Source"
   },
   {
     id: 3,
-    title: "Global Immersion Program",
-    subtitle: "AIT Thailand & Thammasat University",
-    description: "Selected for the study abroad program at the Asian Institute of Technology, Thailand, gaining international academic and technological exposure.",
-    date: "12/2025",
+    title: "AI & Machine Learning Fundamentals",
+    subtitle: "Coursera Certification",
+    description: "Completed Coursera certification in AI & Machine Learning Fundamentals.",
+    date: "TODO_REPLACE: CERTIFICATION_DATE_HERE",
     icon: Globe,
     category: "Academic"
   },
   {
     id: 4,
-    title: "National Startup Day",
-    subtitle: "Entrepreneurial Thinking & Innovation Recognition",
-    description: "Received official recognition for presenting an innovative startup idea and demonstrating entrepreneurial thinking and practical problem-solving.",
-    date: "01/2026",
+    title: "Collegiate Hackathons",
+    subtitle: "Participant",
+    description: "Collaborated with peers to design and build software solutions under time constraints.",
+    date: "TODO_REPLACE: ACHIEVEMENT_DATE_HERE",
     icon: Sparkles,
     category: "Innovation"
   }

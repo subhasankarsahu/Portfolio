@@ -10,20 +10,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const techCategories = [
   {
-    title: "Frontend & UI",
-    techs: ["Next.js 14", "React", "TypeScript", "Tailwind CSS", "GSAP 3", "Framer Motion", "Shadcn/UI"]
+    title: "Frontend",
+    techs: ["React.js", "Next.js", "JavaScript", "Framer Motion"]
   },
   {
-    title: "Backend & Data",
-    techs: ["Python 3", "Flask", "C++", "Java", "Node.js", "Supabase", "MySQL", "PostgreSQL", "REST APIs"]
+    title: "Backend",
+    techs: ["Node.js", "Express.js", "FastAPI", "Flask", "Python", "JavaScript"]
   },
   {
-    title: "AI, ML & Agentic",
-    techs: ["LLM Reasoning", "RAG Systems", "Coding Agents", "NLP Models", "LangChain", "OpenAI APIs", "Vector DBs"]
+    title: "Databases",
+    techs: ["PostgreSQL", "MongoDB", "Supabase", "SQL"]
   },
   {
-    title: "Tools & Architecture",
-    techs: ["Git / GitHub", "Docker", "Vercel", "AWS / Cloudfront", "System Design", "Chrome Extensions"]
+    title: "Tools & Foundations",
+    techs: ["C++", "C", "Java", "Git", "GitHub", "Docker", "Cloudinary", "Claude Code", "ChatGPT", "GitHub Copilot", "Data Structures & Algorithms", "Computer Networks", "Theory of Computation", "Software Engineering"]
   }
 ];
 

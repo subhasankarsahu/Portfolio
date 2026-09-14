@@ -66,19 +66,19 @@ export async function GET() {
 
   try {
     const [reposRes, eventsRes, contribRes, userRes] = await Promise.allSettled([
-      fetch("https://api.github.com/users/shouri123/repos?per_page=100&sort=updated", {
+      fetch("https://api.github.com/users/subhasankarsahu/repos?per_page=100&sort=updated", {
         headers,
         cache: "no-store"
       }),
-      fetch("https://api.github.com/users/shouri123/events?per_page=25", {
+      fetch("https://api.github.com/users/subhasankarsahu/events?per_page=25", {
         headers,
         cache: "no-store"
       }),
-      fetch("https://github-contributions-api.jogruber.de/v4/shouri123", {
+      fetch("https://github-contributions-api.jogruber.de/v4/subhasankarsahu", {
         headers,
         cache: "no-store"
       }),
-      fetch("https://api.github.com/users/shouri123", {
+      fetch("https://api.github.com/users/subhasankarsahu", {
         headers,
         cache: "no-store"
       })
@@ -133,7 +133,7 @@ export async function GET() {
         const mappedEvents: GitHubActivityEvent[] = [];
 
         for (const evt of rawEvents.slice(0, 12)) {
-          const repoName = (evt.repo?.name || "").replace(/^shouri123\//, "");
+          const repoName = (evt.repo?.name || "").replace(/^subhasankarsahu\//, "");
           const timeLabel = getRelativeTime(evt.created_at);
           let action = "GitHub activity recorded";
           let type: GitHubActivityEvent["type"] = "commit_pushed";
@@ -260,7 +260,7 @@ export async function GET() {
       timestamp: new Date().toISOString(),
       timeLabel: ghEvt.timeLabel,
       title: `${ghEvt.action} ${ghEvt.repo ? `(${ghEvt.repo})` : ""}`,
-      description: `GitHub public telemetry on @shouri123.`,
+      description: `GitHub public telemetry on @subhasankarsahu.`,
       type: "github"
     });
   }

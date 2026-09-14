@@ -17,20 +17,21 @@ interface BlogPost {
   url: string;
 }
 
+// TODO_REPLACE: Original author's hardcoded blog fallback posts and DEV.to username.
 const STATIC_BLOG_POSTS: BlogPost[] = [
   {
     id: 1,
-    title: "Why Most Vibe-Coded Apps Fail (and How to Build Them Right)",
+    title: "YOUR_BLOG_POST_TITLE_HERE",
     excerpt:
       "An analysis of the limitations of pure vibe-coding with AI agents, common architectural pitfalls, and how to structure and engineer agent-driven projects for long-term success.",
     date: "Jun 2026",
     tag: "AI / Engineering",
     readTime: "6 min read",
-    url: "https://dev.to/shouri_chakraborty_6ee5dd/why-most-vibe-coded-apps-fail-and-how-to-build-them-right-15ea",
+    url: "YOUR_BLOG_POST_URL_HERE",
   },
   {
     id: 2,
-    title: "Multi-Agent Architecture Patterns",
+    title: "YOUR_BLOG_POST_TITLE_HERE",
     excerpt:
       "Exploring MAMWA — Multi-Agent Multi-Window Architecture — for sophisticated agentic workflows.",
     date: "Mar 2026",
@@ -40,7 +41,7 @@ const STATIC_BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 3,
-    title: "Chrome Extensions & Real-Time Audio",
+    title: "YOUR_BLOG_POST_TITLE_HERE",
     excerpt:
       "How I built Late-Meet: a local-first meeting intelligence companion using VAD and streaming transcription.",
     date: "Feb 2026",
@@ -61,7 +62,7 @@ export default function BlogSection() {
 
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("https://dev.to/api/articles?username=shouri_chakraborty_6ee5dd", {
+        const res = await fetch("https://dev.to/api/articles?username=YOUR_DEVTO_USERNAME_HERE", {
           signal: controller.signal,
         });
         if (!res.ok) throw new Error("Could not fetch DEV.to posts");

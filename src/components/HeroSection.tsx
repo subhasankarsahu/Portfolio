@@ -92,10 +92,10 @@ export default function HeroSection() {
         {/* Left Column: Heading */}
         <div className="w-full md:w-8/12">
           <h1 className="text-[#E1E0CC] text-[24vw] sm:text-[22vw] md:text-[20vw] lg:text-[18vw] xl:text-[17vw] font-medium leading-[0.85] tracking-[-0.07em]">
-            <span className="sr-only">Shouri Chakraborty — AI Developer, Software Engineer & Open Source Maintainer</span>
+            <span className="sr-only">Subha Sankar Sahu — Full-Stack Developer</span>
             <GsapWordsPullUp 
               as="span"
-              text="Shouri" 
+              text="Subha" 
             />
           </h1>
         </div>
@@ -130,7 +130,7 @@ export default function HeroSection() {
           </div>
 
           <p className="hero-fade-up text-primary/70 text-xs sm:text-sm md:text-base leading-relaxed">
-            Diving deep into Generative AI, Agentic systems, AI/ML, and NLP. I love exploring new tools, experimenting with emerging tech, and building things that make computers feel a little smarter.
+            Full-stack developer focused on the PERN stack, strong C++ and DSA fundamentals, and AI-integrated web products. Working toward software engineering internships.
           </p>
           
           <div className="hero-fade-up w-fit mt-2">

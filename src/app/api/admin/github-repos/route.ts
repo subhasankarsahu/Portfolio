@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+
+const GITHUB_USERNAME = "subhasankarsahu";
 import { cookies } from "next/headers";
 import { verifySession } from "@/lib/auth";
 import { fetchProjects } from "@/lib/supabase";
@@ -28,8 +30,8 @@ export async function GET() {
       headers["Authorization"] = `token ${process.env.GITHUB_TOKEN}`;
     }
 
-    // Fetch all public repos for user shouri123
-    const res = await fetch("https://api.github.com/users/shouri123/repos?per_page=100&sort=updated", {
+    // Fetch all public repos for the configured portfolio owner.
+    const res = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`, {
       headers,
       cache: "no-store"
     });
@@ -52,7 +54,7 @@ export async function GET() {
       id: repo.id,
       name: repo.name,
       full_name: repo.full_name,
-      description: repo.description || "Open-source GitHub repository by Shouri Chakraborty.",
+      description: repo.description || "Open-source GitHub repository by Subha Sankar Sahu.",
       stars: repo.stargazers_count || 0,
       forks: repo.forks_count || 0,
       open_issues: repo.open_issues_count || 0,
