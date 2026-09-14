@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Subha Sankar Sahu | Full-Stack Developer",
-    description: "Full-stack developer focused on PERN applications, strong C++ and DSA fundamentals, and AI-powered web products.",
+    description: "I focus on PERN stack full-stack development, strong DSA and C++ fundamentals, and building AI-integrated web products while working toward software engineering internships.",
     images: ["/subha-sankar-sahu-portrait.jpeg"],
   },
 };

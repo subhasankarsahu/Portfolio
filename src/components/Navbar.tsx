@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import GsapMagnetic from './animations/GsapMagnetic';
-import { ChevronDown, Download, Sun, Trophy } from 'lucide-react';
+import { ChevronDown, Download, Menu, X } from 'lucide-react';
 export default function Navbar() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeSection, setActiveSection] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
     { name: 'About', href: '#about' },
@@ -68,6 +69,7 @@ export default function Navbar() {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    setIsMobileMenuOpen(false);
     const target = document.querySelector(href);
     if (target) {
       // Smooth scroll using Lenis
@@ -77,18 +79,22 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-100 transition-all duration-500 w-[92%] sm:w-auto max-w-[1200px] pointer-events-auto rounded-full border ${
+      className={`fixed top-3 left-1/2 -translate-x-1/2 z-100 transition-all duration-500 w-[calc(100%-1rem)] md:w-auto max-w-[1200px] pointer-events-auto rounded-2xl md:rounded-full border ${
         isScrolled
-          ? 'bg-[#0a0a0a]/80 backdrop-blur-md border-white/10 shadow-[0_10px_35px_rgba(0,0,0,0.6)] px-6 py-2'
-          : 'bg-transparent border-transparent px-4 py-3'
+          ? 'bg-[#0a0a0a]/80 backdrop-blur-md border-white/10 shadow-[0_10px_35px_rgba(0,0,0,0.6)] px-3 md:px-6 py-2'
+          : 'bg-transparent border-transparent px-3 md:px-4 py-2 md:py-3'
       }`}
     >
       <div
         ref={containerRef}
-        className="flex items-center justify-between sm:justify-center gap-2 sm:gap-6 md:gap-10"
+        className="flex items-center justify-between md:justify-center gap-2 md:gap-6 lg:gap-10"
       >
-        {/* Navigation Links */}
-        <div className="flex items-center gap-1 sm:gap-4 md:gap-6">
+        <span className="md:hidden text-xs font-black tracking-[0.2em] text-primary px-2" aria-label="Subha Sankar Sahu">
+          SSS
+        </span>
+
+        {/* Desktop Navigation Links */}
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {links.map((link) => {
             const isActive = activeSection === link.href.substring(1);
             return (
@@ -96,7 +102,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleClick(e, link.href)}
-                  className={`text-[10px] sm:text-xs font-semibold tracking-widest uppercase relative px-2.5 py-3 block transition-colors duration-300 ${
+                  className={`text-[10px] lg:text-xs font-semibold tracking-widest uppercase relative px-2.5 py-3 block transition-colors duration-300 whitespace-nowrap ${
                     isActive ? 'text-white font-bold' : 'text-white/60 hover:text-white'
                   }`}
                 >
@@ -115,7 +121,7 @@ export default function Navbar() {
 
         {/* Resume Dropdown Button */}
         <GsapMagnetic strength={10}>
-          <div className="relative group/resume">
+          <div className="relative group/resume hidden md:block">
             <a
               href="/Subha_Sankar_Sahu_Resume_Improved.docx"
               target="_blank"
@@ -151,6 +157,46 @@ export default function Navbar() {
             </div>
           </div>
         </GsapMagnetic>
+
+        <button
+          type="button"
+          onClick={() => setIsMobileMenuOpen((open) => !open)}
+          className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl text-white border border-white/10 bg-white/5"
+          aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-navigation-menu"
+        >
+          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </div>
+
+      <div
+        id="mobile-navigation-menu"
+        className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:hidden flex-col gap-1 pt-3 mt-2 border-t border-white/10`}
+      >
+        {links.map((link) => {
+          const isActive = activeSection === link.href.substring(1);
+          return (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={(e) => handleClick(e, link.href)}
+              className={`flex items-center min-h-11 px-3 rounded-lg text-xs font-semibold tracking-[0.18em] uppercase whitespace-nowrap ${
+                isActive ? 'bg-primary/10 text-primary' : 'text-white/70'
+              }`}
+            >
+              {link.name}
+            </a>
+          );
+        })}
+        <a
+          href="/Subha_Sankar_Sahu_Resume_Improved.docx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center min-h-11 px-3 rounded-lg text-xs font-bold tracking-[0.18em] uppercase text-primary"
+        >
+          <Download className="w-4 h-4 mr-2" /> Resume
+        </a>
       </div>
     </nav>
   );
